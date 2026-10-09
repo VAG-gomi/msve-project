@@ -62,7 +62,9 @@ or imply historical checks that did not occur.
   rows from three independent content inspections).
 - Created `history-bank/REPOSITORY_AUDIT_REPORT.md` (this audit's findings).
 - Corrected `history-bank/source-snapshots/ZIP_CONTENTS.md` (was truncated;
-  now 226 complete entries). Linked the history bank from root README.
+  now 226 complete entries). Verified (not added) the history-bank link in
+  root README — git history proves it was added in `604db7e`
+  (HISTORY-CHECK-001).
 - 404/404 source-to-archive comparisons match. Four candidate hashes match.
 - Cold-start Test C: 10/10 claims traceable via repo navigation. Tests A/B
   not performed (no isolated session available).
@@ -78,3 +80,16 @@ or imply historical checks that did not occur.
   at the pre-audit commit `604db7e`). Manifest rows (427) now reconcile
   with tracked files (427).
 - No other content changed.
+
+## 2026-10-09 — Record reconciliation (work order MSVE-RECONCILIATION-003)
+
+- Corrected `history-bank/REPOSITORY_AUDIT_REPORT.md` and this CHANGELOG:
+  the history-bank link in root README was added in `604db7e`
+  (HISTORY-CHECK-001, "link history bank"), not by REPO-AUDIT-002.
+  Git history (`git log -S "history-bank/" -- README.md`) proves it.
+- Reconciled all commit/file/byte references: `604db7e` = 424 files /
+  3,963,072 bytes; `d83c9de` = 427 / 4,091,804; `93b6117` = 427 /
+  4,093,379; this tree = 427 / 4,094,099.
+- Regenerated `history-bank/REPOSITORY_MANIFEST.csv` (427 rows) to match
+  the corrected tree. Manifest self-hash remains the documented exception.
+- No candidate, historical, or raw-log file modified. No history rewritten.

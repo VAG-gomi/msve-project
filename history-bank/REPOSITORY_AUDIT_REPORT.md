@@ -16,14 +16,22 @@ cold-start readability audit, 2026-10-09.
 
 ## 2–4. Manifest statistics
 
-- **Audited commit:** `604db7e` (pre-audit HEAD). All counts below are
-  reproducible via `git ls-files | wc -l` and the manifest itself.
-- **Tracked files:** 427. **Total tracked bytes:** 4,091,804
-  (method: `sum(os.path.getsize(f) for f in git ls-files)`, measured at the
-  final commit `d83c9de`. The earlier figures — 424 files / 3,963,072 bytes —
-  were measured at the pre-audit commit `604db7e`; the audit itself added
-  three files: `REPOSITORY_MANIFEST.csv`, `SOURCE_READER_GUIDE.csv`,
-  `REPOSITORY_AUDIT_REPORT.md`.)
+Four repository states are distinguished. All counts reproducible via
+`git ls-files | wc -l` and `sum(os.path.getsize(f) for f in git ls-files)`
+at the named commit.
+
+| Commit | Description | Files | Bytes |
+|---|---|---:|---:|
+| `604db7e` | Pre-audit (HISTORY-CHECK-001) | 424 | 3,963,072 |
+| `d83c9de` | Audit (REPO-AUDIT-002) | 427 | 4,091,804 |
+| `93b6117` | Bookkeeping correction | 427 | 4,093,379 |
+| `THIS_COMMIT` | Chronology correction (RECONCILIATION-003) | 427 | 4,094,099 |
+
+The audit added three files over the pre-audit tree:
+`REPOSITORY_MANIFEST.csv`, `SOURCE_READER_GUIDE.csv`,
+`REPOSITORY_AUDIT_REPORT.md`. The bookkeeping correction modified two
+files (CHANGELOG.md, REPOSITORY_AUDIT_REPORT.md).
+
 - **Files with measured size + SHA-256:** 427/427 in
   `history-bank/REPOSITORY_MANIFEST.csv` (mechanically generated from the
   tracked tree; every ordinary file; no submodules or symlinks present).
@@ -75,7 +83,13 @@ cold-start readability audit, 2026-10-09.
   1. `history-bank/source-snapshots/ZIP_CONTENTS.md` was truncated
      (`head -8` output, ~4 entries per ZIP). Replaced with complete
      listings: 226 entries with sizes.
-  2. Root `README.md` did not link the history bank. Added the entry.
+- **Correction to this report (RECONCILIATION-003):** an earlier version
+  of this report claimed this audit added the history-bank link to the
+  root `README.md`. That is incorrect. Git history (`git log -S
+  "history-bank/" -- README.md`) proves the link was added in commit
+  `604db7e` (HISTORY-CHECK-001), whose message reads "link history bank".
+  This audit verified the link exists; it did not create it. The
+  CHANGELOG entry making the same claim is corrected alongside.
 - **Stale content noted (not corrected — historical records):**
   m8 `README.md` corpus counts (36 vs measured 52/46); `lexer.py`
   docstring citing the v0.7 keyword list; `grammar.py` HexFloat `-?`
@@ -102,7 +116,7 @@ cold-start readability audit, 2026-10-09.
 | `history-bank/REPOSITORY_MANIFEST.csv` | Created (427 rows, mechanical) | §4: no complete manifest existed |
 | `history-bank/SOURCE_READER_GUIDE.csv` | Created (86 rows, inspection-grounded) | §6: hashes alone don't explain files |
 | `history-bank/source-snapshots/ZIP_CONTENTS.md` | Replaced truncated listing with complete 226-entry listing | Truncation defect found by inspection |
-| `README.md` | Added history-bank navigation entry | Missing link found by format check |
+| `README.md` | No change (link verified present; added in `604db7e`) | Format check confirmed the entry added by HISTORY-CHECK-001 |
 | `history-bank/REPOSITORY_AUDIT_REPORT.md` | This file | §10 requirement |
 
 No candidate, historical, or raw-log file was modified.
