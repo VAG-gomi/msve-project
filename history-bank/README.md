@@ -21,6 +21,7 @@ surviving record rather than from conversational memory.
 | `experiments-and-results/` | Scope note — no experiments were ever authorised or run |
 | `repository-history/` | Scope note — no git history predates the bank |
 | `source-snapshots/` | The two original ZIP bundles with a contents listing |
+| `source-records/` | The dated project log (primary source for the timeline) |
 
 ## Indexes
 

@@ -33,3 +33,21 @@ or imply historical checks that did not occur.
   scan).
 - Original 18-file archive untouched; initial commit `b890636e` preserved.
   No design freeze, baseline approval, implementation, or experiment.
+
+## 2026-10-09 — Completeness audit (work order MSVE-HISTORY-CHECK-001)
+
+- Verified remote state by git protocol: HEAD `e01d2ee` on remote main,
+  parent `b890636e` intact, 421 tracked files, visibility PUBLIC per
+  standing owner instruction. Root-view vs history-bank discrepancy
+  investigated: no data-level discrepancy found; attributed to stale
+  web-UI rendering.
+- Re-audited the full source universe: all 399 workspace files confirmed
+  present; no other MSVE repos, workspaces, git histories, or bundles found.
+- One genuine omission preserved: the dated project log
+  (`history-bank/source-records/dated-project-log-2026-10-09.md`,
+  byte-identical, sensitivity-scanned clean) with provenance note.
+- Same-name/different-content analysis: 13 filename groups, all distinct
+  versions preserved with distinct paths (e.g. 6 versions of the v0.8 spec).
+- Repaired root README to link the history bank. Inventory now 411 rows.
+- Four candidate hashes recalculated: all match. No freeze, baseline,
+  implementation, or experiment.

@@ -17,6 +17,11 @@ conversational memory.
 - `records/continuity-export-01/` — the eight continuity documents prepared
   for independent review (status, timeline, finding ledger, contract,
   verification evidence, review history, owner decisions, source manifest).
+- `history-bank/` — the complete historical artifact bank: every surviving
+  versioned document, work-order directory, model, test log, review report,
+  and snapshot, with inventory, timeline, provenance, lineage, verification
+  history, gap register, and an independent completeness audit
+  (`history-bank/COMPLETENESS_AUDIT.md`). Start here for project history.
 - `PROJECT_STATE.md` — the current project status.
 - `OPEN_DECISIONS.md` — unresolved owner decisions.
 - `KNOWN_LIMITATIONS.md` — disclosed limits and attestations.
