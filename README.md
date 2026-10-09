@@ -17,6 +17,8 @@ conversational memory.
 - `records/continuity-export-01/` — the eight continuity documents prepared
   for independent review (status, timeline, finding ledger, contract,
   verification evidence, review history, owner decisions, source manifest).
+  Read the provenance correction notice in `PROJECT_STATE.md` first: some
+  preserved continuity statements about review coverage are superseded.
 - `history-bank/` — the complete historical artifact bank: every surviving
   versioned document, work-order directory, model, test log, review report,
   and snapshot, with inventory, timeline, provenance, lineage, verification

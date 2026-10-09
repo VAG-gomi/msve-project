@@ -150,3 +150,17 @@ Historical reports untouched; corrections are in current-status records only.
 - All Z3 runs used reconstructed code lists, labelled RECONSTRUCTED — NOT
   THE HISTORICAL ORIGINAL. Historical artifacts and candidate sources
   unchanged. Linked from root README.
+
+## 2026-10-09 — Reproducibility scope and review provenance (MSVE-DOC-CORRECTIONS-002)
+
+1. `reproducibility/README.md`: clarified inventory scope — 46 rows cover
+   original/source tracked `.py` files at commit `4f395ef`; the nine
+   derived harnesses are catalogued separately in `harnesses/PROVENANCE.md`;
+   55 tracked `.py` files total.
+2. `PROJECT_STATE.md`: added a provenance correction notice superseding
+   the preserved continuity claims that the normative review examined the
+   final spec hash `dbc610c3…` (the report records `69828cb4…`; no
+   final-hash re-review documented) and clarifying the raw log does not
+   itself record file hashes. Historical records preserved unchanged.
+3. Root `README.md`: continuity bullet now directs readers to the
+   PROJECT_STATE.md notice first.

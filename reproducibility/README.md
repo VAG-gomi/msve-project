@@ -6,8 +6,12 @@ Python source has an inventory entry and a disposition; not every source
 executed successfully, and the records distinguish the two.
 
 - [`PYTHON_SOURCE_INVENTORY.csv`](PYTHON_SOURCE_INVENTORY.csv) — one row per
-  tracked `.py` file (46 rows): identity, hashes, category, purpose, status,
-  evidence path.
+  original/source tracked `.py` file (46 rows at commit `4f395ef`): identity,
+  hashes, category, purpose, status, evidence path. The nine derived
+  reproduction harnesses under `harnesses/` are tracked `.py` files but are
+  **not** in this CSV; they are catalogued separately in
+  [`harnesses/PROVENANCE.md`](harnesses/PROVENANCE.md). Total tracked `.py`
+  files at the audited commit: 55 (46 source + 9 harnesses).
 - [`REPRODUCIBILITY_MATRIX.csv`](REPRODUCIBILITY_MATRIX.csv) — per distinct
   source: what was attempted, the exact command, environment, result.
 - [`ENVIRONMENT_REGISTER.md`](ENVIRONMENT_REGISTER.md) — interpreters and
