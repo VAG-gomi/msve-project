@@ -18,9 +18,13 @@ cold-start readability audit, 2026-10-09.
 
 - **Audited commit:** `604db7e` (pre-audit HEAD). All counts below are
   reproducible via `git ls-files | wc -l` and the manifest itself.
-- **Tracked files:** 424. **Total tracked bytes:** 3,963,072
-  (method: `sum(os.path.getsize(f) for f in git ls-files)`).
-- **Files with measured size + SHA-256:** 424/424 in
+- **Tracked files:** 427. **Total tracked bytes:** 4,091,804
+  (method: `sum(os.path.getsize(f) for f in git ls-files)`, measured at the
+  final commit `d83c9de`. The earlier figures — 424 files / 3,963,072 bytes —
+  were measured at the pre-audit commit `604db7e`; the audit itself added
+  three files: `REPOSITORY_MANIFEST.csv`, `SOURCE_READER_GUIDE.csv`,
+  `REPOSITORY_AUDIT_REPORT.md`.)
+- **Files with measured size + SHA-256:** 427/427 in
   `history-bank/REPOSITORY_MANIFEST.csv` (mechanically generated from the
   tracked tree; every ordinary file; no submodules or symlinks present).
 - **Manifest self-reference:** the manifest cannot contain its own final
@@ -95,13 +99,24 @@ cold-start readability audit, 2026-10-09.
 
 | Path | Change | Rationale |
 |---|---|---|
-| `history-bank/REPOSITORY_MANIFEST.csv` | Created (424 rows, mechanical) | §4: no complete manifest existed |
+| `history-bank/REPOSITORY_MANIFEST.csv` | Created (427 rows, mechanical) | §4: no complete manifest existed |
 | `history-bank/SOURCE_READER_GUIDE.csv` | Created (86 rows, inspection-grounded) | §6: hashes alone don't explain files |
 | `history-bank/source-snapshots/ZIP_CONTENTS.md` | Replaced truncated listing with complete 226-entry listing | Truncation defect found by inspection |
 | `README.md` | Added history-bank navigation entry | Missing link found by format check |
 | `history-bank/REPOSITORY_AUDIT_REPORT.md` | This file | §10 requirement |
 
 No candidate, historical, or raw-log file was modified.
+
+## 11a. Post-audit correction (external review)
+
+An external review of this report found two bookkeeping errors, corrected
+in a follow-up commit:
+1. Section 12 named commit `968e7882…` as final; the actual final commit
+   (after an amend) is `d83c9dea70a814ed72dd8bf21a30a60ec980074a`.
+   The amend changed the SHA after the report text was written.
+2. File/byte totals (424 files, 3,963,072 bytes) were measured at the
+   pre-audit commit `604db7e`; the final tree at `d83c9de` has 427 files
+   and 4,091,804 bytes. Both figures are now stated with their commit.
 
 ## 11. Remaining limitations
 
@@ -114,8 +129,10 @@ No candidate, historical, or raw-log file was modified.
 
 ## 12. Commit
 
-- Final commit: `968e78829237bd32c37fc080698635d827c3c5fd`
+- Final commit: `d83c9dea70a814ed72dd8bf21a30a60ec980074a`
   ("Audit: manifest, reader guide, audit report, ZIP contents fix")
 - Parent: `604db7ed18039dfbcf6da8c7320cd9bbb7bc31c9` (history unrewritten)
-- Manifest post-commit SHA-256: reported in the completion handoff
+- Manifest post-commit SHA-256: `56e92034d9e945e4bb1ecb33c3929bb2ab62e1f43c22436d686618a7558beb78`
   (self-reference exception; the manifest lists every other file).
+- Count reconciliation: 427 tracked files = 427 manifest rows; the manifest
+  was regenerated after the audit's own files were added, so no drift.

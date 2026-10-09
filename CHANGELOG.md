@@ -67,3 +67,14 @@ or imply historical checks that did not occur.
 - Cold-start Test C: 10/10 claims traceable via repo navigation. Tests A/B
   not performed (no isolated session available).
 - No candidate, historical, or raw-log file modified.
+
+## 2026-10-09 — Audit report bookkeeping correction (external review)
+
+- Corrected `history-bank/REPOSITORY_AUDIT_REPORT.md`: the final commit SHA
+  was misreported as `968e7882…` (a pre-amend value); the actual final
+  commit is `d83c9dea70a814ed72dd8bf21a30a60ec980074a`.
+- Corrected file/byte totals: 427 files, 4,091,804 bytes measured at the
+  final commit `d83c9de` (the earlier 424 / 3,963,072 figures were measured
+  at the pre-audit commit `604db7e`). Manifest rows (427) now reconcile
+  with tracked files (427).
+- No other content changed.
