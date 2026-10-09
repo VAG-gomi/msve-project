@@ -1,0 +1,15 @@
+spec f01_base_code
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+define detailed : String = "unbound-identifier: foo"
+define b : String = base_code(detailed)
+define plain : String = base_code("syntax-error")
+define nanval : Bool = is_nan(0x1.0000000000000p+0)
+define finval : Bool = is_finite(0x1.0000000000000p+0)
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

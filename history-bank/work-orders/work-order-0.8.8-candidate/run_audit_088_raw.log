@@ -1,0 +1,25 @@
+=== MSVE 0.8.8 test run (post F1a repair) ===
+timestamp: 2026-10-09T14:43:23Z
+python: Python 3.12.3
+z3: 5.1.0
+command: python3 run_audit_088.py
+
+PASS [R1 pkg encodable, result present] solver=sat expected=sat
+PASS [R3a pkg encodable, result missing] solver=unsat expected=unsat
+PASS [C1 proof for different goal, same output] solver=unsat expected=unsat
+PASS [C2 proof, correct claim_id] solver=sat expected=sat
+PASS [C3 HOLDS + TEST_BACKED, valid descriptor] solver=sat expected=sat
+PASS [C4 missing descriptor rejected] solver=unsat expected=unsat
+PASS [C5 no claim_id with basis rejected] solver=unsat expected=unsat
+PASS [S6 UNSAT(A) + result(B) rejected] solver=unsat expected=unsat
+PASS [S7 solver linked, compatible] solver=sat expected=sat
+PASS [S8 missing provenance target rejected] solver=unsat expected=unsat
+PASS [S9 provenance for other claim rejected] solver=unsat expected=unsat
+PASS [S10 no basis, valid result] solver=sat expected=sat
+PASS [B13 recompute, unrelated claim] solver=unsat expected=unsat
+PASS [B14 recompute, correct linkage] solver=sat expected=sat
+PASS [B16 test, mismatched inputs] solver=unsat expected=unsat
+PASS [B17 proof, wrong method] solver=unsat expected=unsat
+
+16/16 0.8.8 checks behaved as expected
+exit: 0

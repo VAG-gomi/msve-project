@@ -1,0 +1,13 @@
+spec tiny-construct
+version 0.8.0
+scope finite-search
+authors ["example"]
+type Pair = { x: Nat, y: Nat }
+constraints positive {
+  require px: output.x > 0;
+  require py: output.y > 0;
+}
+goal construct Pair satisfying [positive]
+verification { proof: none; test: none; assurance: none; }
+limits { timeout: 10s; }
+record: all

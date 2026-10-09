@@ -1,0 +1,4 @@
+=== test_grammar_conformance ===
+test_grammar_conformance: 48 productions OK
+PASS
+exit=0

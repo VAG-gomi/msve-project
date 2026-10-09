@@ -1,0 +1,38 @@
+spec selector-contract
+version 0.7.0
+scope finite-total-order-selection
+authors ["MSVE design team"]
+
+type Candidate = { uci: String, rank: Nat, score: Binary64 }
+type CandidateSet = [Candidate]
+type RawInput = String
+
+define prefers(a: Candidate, b: Candidate): Bool =
+  (a.score > b.score) \/
+  ((a.score == b.score) /\ (a.rank < b.rank)) \/
+  ((a.score == b.score) /\ (a.rank == b.rank) /\ (a.uci < b.uci))
+
+define is_wellformed(cs: CandidateSet): Bool =
+  (len(cs) > 0) /\
+  (forall c in cs :: ((len(c.uci) > 0) /\ is_ascii_printable(c.uci) /\ has_no_whitespace(c.uci))) /\
+  (forall i in range(len(cs)) :: (forall j in range(len(cs)) :: (((i == j) \/ (cs[i].uci != cs[j].uci))))) /\
+  (forall c in cs :: (is_finite(c.score)))
+
+define contract_holds(candidates: CandidateSet, sel: Candidate): Bool =
+  is_wellformed(candidates) /\
+  (exists c in candidates :: (sel == c)) /\
+  (forall c in candidates :: ((prefers(sel, c) \/ (sel == c))))
+
+define selector_impl: Impl(CandidateSet -> Candidate) = external("selector-impl/0.7.0")
+define indie_ref_impl: Impl(CandidateSet -> Candidate) = external("independent-ref-impl/0.7.0")
+
+goal check contract_holds of selector_impl
+
+verification {
+  proof: none;
+  test: differential by indie-ref-impl/0.7.0 required;
+  test: property-fuzz { seeds: [1, 2, 3], cases: 10000 } required;
+  assurance: level-b accepted;
+}
+limits { timeout: 300s; memory: 2GB; }
+record: all

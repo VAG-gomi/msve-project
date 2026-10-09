@@ -1,0 +1,38 @@
+{
+  "work_order": "0.8.5.2",
+  "date": "2026-10-09",
+  "audit_input_spec_sha256": "9f692585cfe9c4e9322afdb75d2ff52081fcdd55ffbcc59f5a21f5251fa7c003",
+  "solver": "z3 5.1.0",
+  "artefacts": [
+    {
+      "path": "MSVE_v0.8.5.2_EVIDENCE_INDEX.md",
+      "bytes": 2814,
+      "sha256": "9864f943401fc6bb0db4903a023899888b74039069704194c86f7c3b97bfa2b0"
+    },
+    {
+      "path": "MSVE_v0.8.5.2_F20_PROSE_FORMULA_ALIGNMENT.md",
+      "bytes": 3416,
+      "sha256": "ad2cf0267f83768c11e6f804dbda04ee42154eedcc4d8bcb953e1a0228721b6f"
+    },
+    {
+      "path": "MSVE_v0.8.5.2_F21_ASSURANCE_EVIDENCE_AUDIT.md",
+      "bytes": 5660,
+      "sha256": "19a5b7c1b61d91d3d455f6bcad868f082511ac971d5a428d4470f81dc60d6db9"
+    },
+    {
+      "path": "MSVE_v0.8.5.2_F22_TRANSFER_RECONCILIATION.md",
+      "bytes": 1861,
+      "sha256": "cc24b9d2c54ed55b27a937946ff64c3a965274d21009d877c585bca1d97b9b1e"
+    },
+    {
+      "path": "MSVE_v0.8.5_CHECK_RECONCILIATION_CORRECTED.md",
+      "bytes": 5372,
+      "sha256": "658d9256f40dd8adba33c7a72c4e0e19ca5e749015abf6bc8a99e2e3edaa1506"
+    },
+    {
+      "path": "f21_assurance_tests.py",
+      "bytes": 4382,
+      "sha256": "3e118600da63ceef02e29237c4ad8f53d3a92cacc1729feb3451dee5725a7224"
+    }
+  ]
+}

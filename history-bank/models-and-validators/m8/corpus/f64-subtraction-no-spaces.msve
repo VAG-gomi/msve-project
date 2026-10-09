@@ -1,0 +1,9 @@
+spec f64-subtraction-no-spaces
+version 0.8.0
+scope exact-arithmetic
+authors ["t"]
+define v: Binary64 = 0x1.0000000000000p+0-0x1.0000000000000p+0
+goal derive v
+verification { proof: none; }
+limits { timeout: 10s; }
+record: all

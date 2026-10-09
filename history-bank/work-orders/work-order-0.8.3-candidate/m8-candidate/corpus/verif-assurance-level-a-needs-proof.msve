@@ -1,0 +1,11 @@
+spec verif_assurance_level_a_needs_proof
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+goal derive 1
+verification {
+  proof: none;
+  assurance: level-a required;
+}
+limits { timeout: 10s; }
+record: all

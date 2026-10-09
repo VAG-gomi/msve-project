@@ -1,0 +1,4 @@
+=== test_canonical ===
+test_canonical: all assertions hold
+PASS
+exit=0

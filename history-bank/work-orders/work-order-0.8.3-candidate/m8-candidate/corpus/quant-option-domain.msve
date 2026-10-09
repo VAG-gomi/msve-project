@@ -1,0 +1,10 @@
+spec quant-option-domain
+version 0.8.0
+scope exact-arithmetic
+authors ["t"]
+define o: Option<Nat> = some(1)
+define p: Bool = forall x in o :: (x > 0)
+goal derive 1
+verification { proof: none; }
+limits { timeout: 10s; }
+record: all

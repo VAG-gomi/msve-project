@@ -1,0 +1,53 @@
+{
+  "work_order": "0.8.5",
+  "date": "2026-10-09",
+  "audit_input_spec_sha256": "9f692585cfe9c4e9322afdb75d2ff52081fcdd55ffbcc59f5a21f5251fa7c003",
+  "solver": "z3 5.1.0",
+  "artefacts": [
+    {
+      "path": "MSVE_v0.8.5_CHECK_RECONCILIATION.md",
+      "bytes": 5330,
+      "sha256": "5fea16ca54d739d6137ae702eb2762e16ec161518b4399fd3e7d707080033277"
+    },
+    {
+      "path": "MSVE_v0.8.5_EVIDENCE_INDEX.md",
+      "bytes": 3290,
+      "sha256": "4d8df7bcc37e488cb9979b74d36a1ee0abb13f0d14a600fefb1e6e69e79a8923"
+    },
+    {
+      "path": "MSVE_v0.8.5_F20_ADJUDICATION.md",
+      "bytes": 4796,
+      "sha256": "c94b8dc0b19654ae7eee7a3da0e85521a5dddfe07406929fbcb8ee5e41ff4376"
+    },
+    {
+      "path": "MSVE_v0.8.5_F20_CORRECTION_PROPOSAL.md",
+      "bytes": 1507,
+      "sha256": "07d7878c7668df3fe2261471dc358348046abfa11cf39d8eb4e806f1687f2615"
+    },
+    {
+      "path": "MSVE_v0.8.5_SATISFIABILITY_SCOPE.md",
+      "bytes": 4250,
+      "sha256": "364ce07e0a29f17dfb2a9a510fd63b7a471d2a6fdd761af463765b4db2d899ef"
+    },
+    {
+      "path": "dump_assignment.py",
+      "bytes": 1963,
+      "sha256": "c31e585601150a35b617ab6da6b584a9e41f80048ebf9e169344963eb0e933be"
+    },
+    {
+      "path": "f20_adjudication.py",
+      "bytes": 3116,
+      "sha256": "8f7951de22de8d13a7991399424b3539d784ff55833c69118757acdf8b2ca943"
+    },
+    {
+      "path": "run_audit_raw_output.txt",
+      "bytes": 2473,
+      "sha256": "4c0393b45fd4239826b838b18fae0e806e308250cf9916ea9eae334b2eeedb2a"
+    },
+    {
+      "path": "s1_assignment.json",
+      "bytes": 1111,
+      "sha256": "4363424bb13897ff8383ac3badaefa38e414e18cdd02558835ee16911a7832f6"
+    }
+  ]
+}

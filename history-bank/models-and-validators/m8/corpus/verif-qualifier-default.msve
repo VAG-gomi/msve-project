@@ -1,0 +1,10 @@
+spec verif_qualifier_default
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+goal derive 1
+verification {
+  proof: kernel-checked by lean-kernel/4.9.0;
+}
+limits { timeout: 10s; }
+record: all

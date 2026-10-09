@@ -1,0 +1,9 @@
+spec tiny-prove
+version 0.7.0
+scope kernel-proofs
+authors ["example"]
+axiom add_zero: forall n in type Nat :: (n + 0 == n)
+goal prove forall n in type Nat :: (n + 0 == n) assuming [add_zero]
+verification { proof: kernel-checked by lean-kernel/4.9.0 required; assurance: level-a required; }
+limits { timeout: 60s; }
+record: all

@@ -1,0 +1,11 @@
+spec arith_neg3_plus2
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+define v : Int = -3 + 2
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

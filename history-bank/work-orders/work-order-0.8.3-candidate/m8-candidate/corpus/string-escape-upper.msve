@@ -1,0 +1,11 @@
+spec string_escape_upper
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+define s : String = "\u001A"
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

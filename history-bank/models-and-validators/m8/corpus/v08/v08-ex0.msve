@@ -1,0 +1,8 @@
+spec derive-level-a
+version 0.8.0
+scope exact-arithmetic
+authors ["example"]
+goal derive (2 * 21) + 1
+verification { proof: none; recompute: by recompute-checker/1.0.0 required; assurance: level-a required; }
+limits { timeout: 10s; }
+record: all

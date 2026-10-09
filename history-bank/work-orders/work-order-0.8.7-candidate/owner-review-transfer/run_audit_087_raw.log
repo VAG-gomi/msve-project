@@ -1,0 +1,27 @@
+=== MSVE 0.8.7 test run ===
+timestamp: 2026-10-09T14:05:48Z
+python: Python 3.12.3
+z3: 5.1.0
+command: python3 run_audit_087.py
+
+PASS [R1 pkg encodable, result present] solver=sat expected=sat
+PASS [R2 pkg canonicalization, result present] solver=sat expected=sat
+PASS [R3a pkg encodable, result missing] solver=unsat expected=unsat
+PASS [R3b pkg canonicalization, result missing] solver=unsat expected=unsat
+PASS [R3c non-pkg internal error, result missing (control)] solver=sat expected=sat
+PASS [R3d pkg with colon detail, result missing] solver=unsat expected=unsat
+PASS [S1 Lvl B + KERNEL_PROOF + evidence] solver=sat expected=sat
+PASS [S2 Lvl B + KERNEL_PROOF, no evidence] solver=unsat expected=unsat
+PASS [S3 recompute + non-DERIVED_VALUE (incompatible)] solver=unsat expected=unsat
+PASS [S4 proof, unrelated property] solver=unsat expected=unsat
+PASS [S5 proof, wrong method] solver=unsat expected=unsat
+PASS [S6 proof, correct linkage] solver=sat expected=sat
+PASS [S7 test, unrelated property] solver=unsat expected=unsat
+PASS [S8 test, correct property] solver=sat expected=sat
+PASS [S9 proof, malformed hash] solver=unsat expected=unsat
+PASS [S10 proof, wrong collection] solver=unsat expected=unsat
+PASS [S11 recompute, empty checker] solver=unsat expected=unsat
+PASS [S12 recompute, correct linkage] solver=sat expected=sat
+
+18/18 0.8.7 checks behaved as expected
+exit: 0

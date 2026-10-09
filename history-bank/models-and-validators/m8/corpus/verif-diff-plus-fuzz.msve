@@ -1,0 +1,12 @@
+spec verif_diff_plus_fuzz
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+goal derive 1
+verification {
+  proof: none;
+  test: differential by indie-fuzz/1.0.0 required;
+  test: property-fuzz { seeds: [1], cases: 10 } required;
+}
+limits { timeout: 10s; }
+record: all

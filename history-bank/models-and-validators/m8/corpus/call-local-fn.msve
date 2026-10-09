@@ -1,0 +1,10 @@
+spec call-local-fn
+version 0.8.0
+scope exact-arithmetic
+authors ["t"]
+define inc(x: Nat): Nat = x + 1
+define apply(f: (Nat) -> Nat, x: Nat): Nat = f(x)
+goal derive apply(inc, 1)
+verification { proof: none; }
+limits { timeout: 10s; }
+record: all

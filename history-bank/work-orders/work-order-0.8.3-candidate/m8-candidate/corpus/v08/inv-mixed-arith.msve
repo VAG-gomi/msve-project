@@ -1,0 +1,12 @@
+// INVALID: type
+spec inv-mixed-arith
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+define v : Real = 1.5 + 2
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

@@ -1,0 +1,60 @@
+spec validator-contract-check
+version 0.8.0
+scope input-validation
+authors ["MSVE design team"]
+
+type Candidate = { uci: String, rank: Nat, score: Binary64 }
+type CandidateSet = [Candidate]
+type RawInput = String
+type ValidationError = String
+type DecodeOutcome = { ok: Bool, candidates: [Candidate], error: Option<ValidationError> }
+type ValidationOutcome = { accepted: Bool, candidates: Option<CandidateSet>, error: Option<ValidationError> }
+
+define ERR_EMPTY_SET: ValidationError = "empty-candidate-set"
+define ERR_INVALID_UCI: ValidationError = "invalid-uci"
+define ERR_DUPLICATE_UCI: ValidationError = "duplicate-uci"
+
+define is_validation_error(e: ValidationError): Bool =
+  (e == "malformed-json") \/ (e == "invalid-top-level") \/
+  (e == "invalid-element") \/ (e == "duplicate-key") \/
+  (e == "missing-field") \/ (e == "unexpected-field") \/
+  (e == "invalid-field-type") \/ (e == "invalid-rank") \/
+  (e == "invalid-score") \/ (e == "empty-candidate-set") \/
+  (e == "invalid-uci") \/ (e == "duplicate-uci")
+
+define valid_uci(u: String): Bool =
+  (u != "") /\ is_ascii_printable(u) /\ has_no_whitespace(u)
+
+define has_dup_uci(cs: [Candidate]): Bool =
+  exists i in range(len(cs)) :: (exists j in range(len(cs)) :: (((i != j) /\ (cs[i].uci == cs[j].uci))))
+
+define rejected(e: ValidationError): ValidationOutcome =
+  { accepted: false, candidates: none, error: some(e) }
+
+define accept(cs: CandidateSet): ValidationOutcome =
+  { accepted: true, candidates: some(cs), error: none }
+
+define validate(cs: [Candidate]): ValidationOutcome =
+  if len(cs) == 0 then rejected(ERR_EMPTY_SET)
+  else if exists c in cs :: ((!(valid_uci(c.uci)))) then rejected(ERR_INVALID_UCI)
+  else if has_dup_uci(cs) then rejected(ERR_DUPLICATE_UCI)
+  else accept(cs)
+
+define validator_contract(raw: RawInput, out: ValidationOutcome): Bool =
+  let d = decode_candidates(raw) in
+  ((d.ok ==> ((!(is_some(d.error))) /\ (out == validate(d.candidates)))) /\
+  ((!(d.ok)) ==> (is_some(d.error) /\
+    (len(d.candidates) == 0) /\
+    (case d.error of some(e) -> ((is_validation_error(e)) /\ (out == rejected(e))) | none -> false))))
+
+define validator_impl: Impl(RawInput -> ValidationOutcome) = external("validator-impl/0.8.0")
+
+goal check validator_contract of validator_impl
+
+verification {
+  proof: none;
+  test: property-fuzz { seeds: [7, 8], cases: 5000 } required;
+  assurance: level-b accepted;
+}
+limits { timeout: 300s; }
+record: all

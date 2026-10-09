@@ -1,0 +1,55 @@
+=== corpus ===
+record-ok.msve: PASS
+record-nested.msve: PASS
+record-dup-field.msve: PASS
+record-unknown-field.msve: PASS
+record-missing-field.msve: PASS
+record-field-type-mismatch.msve: PASS
+record-infer.msve: PASS
+quant-parens-ok.msve: PASS
+quant-nested-ok.msve: PASS
+bare-quantifier.msve: PASS
+arith-neg3-plus2.msve: PASS
+arith-mixed-real-nat.msve: PASS
+arith-nat-int-embed.msve: PASS
+arith-unary-minus-nat.msve: PASS
+arith-div-int-exact.msve: PASS
+is_some-ok.msve: PASS
+unbound-ident.msve: PASS
+to_rat-ok.msve: PASS
+range-ok.msve: PASS
+f64-valid.msve: PASS
+f64-neg-zero-exp.msve: PASS
+f64-upper-hex.msve: PASS
+f64-normal-form-subnormal.msve: PASS
+string-escape-upper.msve: PASS
+string-escape-not-short.msve: PASS
+string-ok.msve: PASS
+case-ok.msve: PASS
+let-ok.msve: PASS
+verif-diff-plus-fuzz.msve: PASS
+verif-duplicate-test.msve: PASS
+verif-proof-conflict.msve: PASS
+verif-recompute-conflict.msve: PASS
+verif-test-none-conflict.msve: PASS
+verif-qualifier-default.msve: PASS
+verif-cases-zero.msve: PASS
+verif-assurance-level-a-needs-proof.msve: PASS
+limits-timeout-range.msve: PASS
+limits-steps-zero.msve: PASS
+verif-assurance-level-a-unavailable.msve: PASS
+type-cyclic-alias.msve: PASS
+type-unbound-name.msve: PASS
+define-shadow-builtin.msve: PASS
+f64-subtraction-no-spaces.msve: PASS
+call-local-fn.msve: PASS
+quant-option-domain.msve: PASS
+proj-path-unresolvable.msve: PASS
+--- test_canonical ---
+test_canonical: all assertions hold
+test_canonical: PASS
+--- test_grammar_conformance ---
+test_grammar_conformance: 48 productions OK
+test_grammar_conformance: PASS
+corpus: 0 failures
+exit=0

@@ -1,0 +1,13 @@
+spec verif-assurance-level-a-unavailable
+version 0.8.0
+scope exact-arithmetic
+authors ["t"]
+type Pair = { x: Nat, y: Nat }
+constraints positive {
+  require px: output.x > 0;
+  require py: output.y > 0;
+}
+goal construct Pair satisfying [positive]
+verification { proof: none; assurance: level-a required; }
+limits { timeout: 10s; }
+record: all

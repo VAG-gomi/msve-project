@@ -1,0 +1,13 @@
+spec record_nested
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+type Inner = { a: Bool }
+type Outer = { inner: Inner, n: Nat }
+define o : Outer = { inner: { a: true }, n: 3 }
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

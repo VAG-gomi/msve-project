@@ -1,0 +1,13 @@
+spec tiny-models
+version 0.8.0
+scope finite-constraint-models
+authors ["example"]
+type M = { x: Nat }
+constraints two_vals {
+  require xv: (output.x == 1) \/ (output.x == 2);
+}
+projection xproj = [output.x]
+goal compare-models M satisfying [two_vals] under xproj
+verification { proof: none; test: none; assurance: level-b accepted; }
+limits { timeout: 10s; }
+record: all

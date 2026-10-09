@@ -1,0 +1,13 @@
+spec f04_is_nan_typed
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+define x : Binary64 = 0x1.0000000000000p+0
+define isn : Bool = is_nan(x)
+define isf : Bool = is_finite(x)
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

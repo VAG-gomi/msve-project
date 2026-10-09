@@ -1,0 +1,221 @@
+[
+  {
+    "file": "record-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "record-nested.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "record-dup-field.msve",
+    "expect": "fail",
+    "category": "type"
+  },
+  {
+    "file": "record-unknown-field.msve",
+    "expect": "fail",
+    "category": "type"
+  },
+  {
+    "file": "record-missing-field.msve",
+    "expect": "fail",
+    "category": "type"
+  },
+  {
+    "file": "record-field-type-mismatch.msve",
+    "expect": "fail",
+    "category": "type"
+  },
+  {
+    "file": "record-infer.msve",
+    "expect": "fail",
+    "category": "syntax"
+  },
+  {
+    "file": "quant-parens-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "quant-nested-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "bare-quantifier.msve",
+    "expect": "fail",
+    "category": "syntax"
+  },
+  {
+    "file": "arith-neg3-plus2.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "arith-mixed-real-nat.msve",
+    "expect": "fail",
+    "category": "type"
+  },
+  {
+    "file": "arith-nat-int-embed.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "arith-unary-minus-nat.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "arith-div-int-exact.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "is_some-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "unbound-ident.msve",
+    "expect": "fail",
+    "category": "name-resolution"
+  },
+  {
+    "file": "to_rat-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "range-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "f64-valid.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "f64-neg-zero-exp.msve",
+    "expect": "fail",
+    "category": "lexical"
+  },
+  {
+    "file": "f64-upper-hex.msve",
+    "expect": "fail",
+    "category": "lexical"
+  },
+  {
+    "file": "f64-normal-form-subnormal.msve",
+    "expect": "fail",
+    "category": "canonical"
+  },
+  {
+    "file": "string-escape-upper.msve",
+    "expect": "fail",
+    "category": "canonical"
+  },
+  {
+    "file": "string-escape-not-short.msve",
+    "expect": "fail",
+    "category": "canonical"
+  },
+  {
+    "file": "string-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "case-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "let-ok.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "verif-diff-plus-fuzz.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "verif-duplicate-test.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "verif-proof-conflict.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "verif-recompute-conflict.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "verif-test-none-conflict.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "verif-qualifier-default.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "verif-cases-zero.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "verif-assurance-level-a-needs-proof.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "limits-timeout-range.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "limits-steps-zero.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "verif-assurance-level-a-unavailable.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "type-cyclic-alias.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "type-unbound-name.msve",
+    "expect": "fail",
+    "category": "name-resolution"
+  },
+  {
+    "file": "define-shadow-builtin.msve",
+    "expect": "fail",
+    "category": "name-resolution"
+  },
+  {
+    "file": "f64-subtraction-no-spaces.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "call-local-fn.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "quant-option-domain.msve",
+    "expect": "fail",
+    "category": "type"
+  },
+  {
+    "file": "proj-path-unresolvable.msve",
+    "expect": "fail",
+    "category": "admission"
+  },
+  {
+    "file": "f01-base-code.msve",
+    "expect": "pass"
+  },
+  {
+    "file": "f04-is-nan-typed.msve",
+    "expect": "pass"
+  }
+]

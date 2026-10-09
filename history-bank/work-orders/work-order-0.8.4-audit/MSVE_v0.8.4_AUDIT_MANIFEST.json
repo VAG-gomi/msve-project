@@ -1,0 +1,72 @@
+{
+  "work_order": "0.8.4",
+  "date": "2026-10-09",
+  "audit_input_spec_sha256": "9f692585cfe9c4e9322afdb75d2ff52081fcdd55ffbcc59f5a21f5251fa7c003",
+  "artefacts": [
+    {
+      "path": "MSVE_v0.8.4_AUDIT_INPUT_MANIFEST.md",
+      "bytes": 2435,
+      "sha256": "1c39690f4be54c06fcb5404c0787085564ae46a36435f1df08bed3af7a3eb914"
+    },
+    {
+      "path": "MSVE_v0.8.4_FORMALIZATION_RECONCILIATION.md",
+      "bytes": 4382,
+      "sha256": "b59461781e534154e72ae6b2a4612fe723820d9acfbdc78b4da193d5b768a482"
+    },
+    {
+      "path": "MSVE_v0.8.4_INVARIANT_FORMALIZATION_A.md",
+      "bytes": 25751,
+      "sha256": "434f2ded2fddfc3e9befcd9c3dbaac5939d7eb8d632c78c42cbb16035efb5079"
+    },
+    {
+      "path": "MSVE_v0.8.4_INVARIANT_FORMALIZATION_B.md",
+      "bytes": 26862,
+      "sha256": "f8dd6f359ad08f50fd72f16d75b019dc6bb9a9b3569614291829c3a5f204da7d"
+    },
+    {
+      "path": "MSVE_v0.8.4_OWNER_HANDOFF.md",
+      "bytes": 3342,
+      "sha256": "2ecaaabae8587416547ca6cd8c4061eb0ed539442a4542bc553b2822cccd2a88"
+    },
+    {
+      "path": "MSVE_v0.8.4_SCHEMA_CONSISTENCY_REPORT.md",
+      "bytes": 5820,
+      "sha256": "fef4fac2919254b8619dc9742f9c1df03a60448eeee8180da507d97561223d46"
+    },
+    {
+      "path": "MSVE_v0.8.4_VERIFICATION_EVIDENCE.md",
+      "bytes": 2570,
+      "sha256": "72960cb6b15d48f770e11f5deed4ce06a7d9f112c831c14b86eea5cd73b1fa86"
+    },
+    {
+      "path": "MSVE_v0.8.4_WITNESS_AND_COUNTERMODEL_CATALOG.md",
+      "bytes": 4853,
+      "sha256": "76cf92b1b6e170d286e3ca3c1045f6cfebae4556fc1408a083ee6356bda6f262"
+    },
+    {
+      "path": "audit_model.py",
+      "bytes": 13505,
+      "sha256": "ec43524b5e252f2987fc0dcf77257173277496a825b82722d3abed445075aa54"
+    },
+    {
+      "path": "dump_witnesses.py",
+      "bytes": 2608,
+      "sha256": "9f4995c5bf02623ec0c7882aa4b8671c087579b3a34570a6d31d24a06fa55d11"
+    },
+    {
+      "path": "formalization-A-draft.md",
+      "bytes": 25751,
+      "sha256": "434f2ded2fddfc3e9befcd9c3dbaac5939d7eb8d632c78c42cbb16035efb5079"
+    },
+    {
+      "path": "formalization-B-draft.md",
+      "bytes": 26862,
+      "sha256": "f8dd6f359ad08f50fd72f16d75b019dc6bb9a9b3569614291829c3a5f204da7d"
+    },
+    {
+      "path": "run_audit.py",
+      "bytes": 17360,
+      "sha256": "32de9b0365847a1f6800e8967d089c3958e7ce9410eeadea6fec124e54c867b0"
+    }
+  ]
+}

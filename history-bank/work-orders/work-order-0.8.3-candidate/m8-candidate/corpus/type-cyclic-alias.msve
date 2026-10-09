@@ -1,0 +1,10 @@
+spec type-cyclic-alias
+version 0.8.0
+scope exact-arithmetic
+authors ["t"]
+type A = B
+type B = A
+goal derive 1
+verification { proof: none; }
+limits { timeout: 10s; }
+record: all

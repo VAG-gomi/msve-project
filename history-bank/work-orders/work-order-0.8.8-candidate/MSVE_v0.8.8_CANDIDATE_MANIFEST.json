@@ -1,0 +1,69 @@
+{
+  "work_order": "0.8.8",
+  "date": "2026-10-09",
+  "status": "CORRECTION CANDIDATE PREPARED \u2014 OWNER REVIEW REQUIRED",
+  "note": "N-1/N-2/N-3 and F1(a)/F2/F3 repaired and re-verified (16/16). F1(b) outcome_compatible is normative-only (documented limitation).",
+  "test_run": "16/16 pass (post-repair), raw log preserved",
+  "artefacts": [
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/MSVE_DESIGN_SPEC_v0.8.md",
+      "bytes": 95530,
+      "sha256": "69828cb4c1048f2e233d6d6fefeecc86b4a1e337e6566405293e65d8eef2505f"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/audit_model_088.py",
+      "bytes": 19714,
+      "sha256": "2a3222a9022df0da45bc5f4ba460936c3f4ded6fd800e829ba849260ce6f1762"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/run_audit_088.py",
+      "bytes": 12199,
+      "sha256": "0658135d6bd2ea07dc497663dee11a0219679d83968607c8d05527527358d3ba"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/run_audit_088_raw.log",
+      "bytes": 1251,
+      "sha256": "57f5f7cfce9c4092854d1f757b731d0b90e0d86d3207f2409c96f230526bdeea"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/sat_models_088.json",
+      "bytes": 11496,
+      "sha256": "24548aedb8f3143b0b5742ae8543a07be5929de8dc8a294306e82e3ac4415973"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/MSVE_v0.8.8_SOURCE_TO_CONSTRAINT.md",
+      "bytes": 1348,
+      "sha256": "f186ec620579b1e5b7b4283ac09f3ce4193075f858581da5130fe65ead522758"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/MSVE_v0.8.8_DESIGN_NOTE.md",
+      "bytes": 2325,
+      "sha256": "e75ba6b4ff8801dce0e380ae0d811b13a613a1b89c825d12e190d719de94979e"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/MSVE_v0.8.8_REGRESSION_MATRIX.md",
+      "bytes": 1626,
+      "sha256": "276f0b71078214e94d8fa24a9f3c262387c6fd652d0eee32f26716c0148d6f68"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/MSVE_v0.8.8_DISPOSITION_TABLE.md",
+      "bytes": 2548,
+      "sha256": "dc73500204405d50e3eaeeb764c080d71a6b60a237a1c6770e55c62bc8905995"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/MSVE_v0.8.8_NORMATIVE_REVIEW.md",
+      "bytes": 6568,
+      "sha256": "bc83473b5e807de681f4a9dd40589e472e830af007eac848cb887af8b89e1dc4"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/MSVE_v0.8.8_MODEL_REVIEW.md",
+      "bytes": 3359,
+      "sha256": "7db3ace29bfd90542a703dacadf374625956734958dd9cbf8d417ab45adad984"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.8-candidate/MSVE_v0.8.8_OWNER_HANDOFF.md",
+      "bytes": 2342,
+      "sha256": "2006bc8de45bfb141b8dffc1c9e59e1b5178e73ee5cc8c68ff82ec568afb9d99"
+    }
+  ]
+}

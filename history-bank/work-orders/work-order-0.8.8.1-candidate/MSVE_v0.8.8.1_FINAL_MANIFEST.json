@@ -1,0 +1,81 @@
+{
+  "work_order": "0.8.8.1-FINAL",
+  "date": "2026-10-09",
+  "status": "CORRECTION CANDIDATE PREPARED \u2014 OWNER REVIEW REQUIRED",
+  "test_run": "9/9 pass, raw log 2026-10-09T14:52:51Z, exit 0",
+  "reviews": {
+    "normative": {
+      "hash": "8a3b8dffe3e69171ac5382b3db10c46f9c9b86dc86c9662a9090d79d298e9943",
+      "reviewed_spec": "dbc610c3a97d7107ab0f4de499b240e243f45c49b56f0a1855b7333c80cb7782",
+      "findings": "N-0.8.8.1-1/2/3 blocking, all repaired"
+    },
+    "model": {
+      "hash": "5fe16ba74ace45cd7fe336211ed867185dad49e7741d45c0e93a50a3b5209826",
+      "reviewed_model": "efd8e40b6043ec6036d183b88b51d3a6d315c0a7cbbcaac4dff4e5abba3712c2",
+      "reinspection": "M1 confirmed repaired on fc6eb49f50eae04595495af05058d52f7c27b0d5b29aa3e16254a33f66be31ae",
+      "findings": "M1 blocking repaired; M2 non-blocking acknowledged"
+    }
+  },
+  "artefacts": [
+    {
+      "file": "MSVE_DESIGN_SPEC_v0.8.md",
+      "bytes": 96366,
+      "sha256": "dbc610c3a97d7107ab0f4de499b240e243f45c49b56f0a1855b7333c80cb7782"
+    },
+    {
+      "file": "audit_model_0881.py",
+      "bytes": 21788,
+      "sha256": "fc6eb49f50eae04595495af05058d52f7c27b0d5b29aa3e16254a33f66be31ae"
+    },
+    {
+      "file": "run_audit_0881.py",
+      "bytes": 10120,
+      "sha256": "c750ef5c37a132893908c1bfaf4070e67d5a842e7043684e95f05a1936711f83"
+    },
+    {
+      "file": "run_audit_0881_raw.log",
+      "bytes": 852,
+      "sha256": "525cd40667f96be4d297f5be39a8c02e72ddf7f1644b7e3a31c73006082b480a"
+    },
+    {
+      "file": "sat_models_0881.json",
+      "bytes": 7613,
+      "sha256": "f67c8dbfd26e39b77edb85c6e6177341847bcbb89ddd106e1461b383587748e0"
+    },
+    {
+      "file": "MSVE_v0.8.8.1_OUTCOME_MATRIX.md",
+      "bytes": 984,
+      "sha256": "e5e2fb1f9f6bc7ca31c4d4c246b81c5013a369a85002902ae6db6c1641190d76"
+    },
+    {
+      "file": "MSVE_v0.8.8.1_DESCRIPTOR_MATRIX.md",
+      "bytes": 1131,
+      "sha256": "dbb8b38af2330e5cc0e8e1213231a51cb48e15fa7ad3e9a34e51390a84e6333a"
+    },
+    {
+      "file": "MSVE_v0.8.8.1_LINKAGE_MATRIX.md",
+      "bytes": 913,
+      "sha256": "ae9adbb7e5c45604a888f8ca3f07e0eb06c108e87389c814668cc8d95562973f"
+    },
+    {
+      "file": "MSVE_v0.8.8.1_NORMATIVE_REVIEW.md",
+      "bytes": 2677,
+      "sha256": "8a3b8dffe3e69171ac5382b3db10c46f9c9b86dc86c9662a9090d79d298e9943"
+    },
+    {
+      "file": "MSVE_v0.8.8.1_MODEL_REVIEW.md",
+      "bytes": 2555,
+      "sha256": "5fe16ba74ace45cd7fe336211ed867185dad49e7741d45c0e93a50a3b5209826"
+    },
+    {
+      "file": "MSVE_v0.8.8.1_RECONCILIATION.md",
+      "bytes": 2426,
+      "sha256": "483e3992a39afccf589b3f315c7d2d9f9f1737f66ffa200371d2a80ae54f361f"
+    },
+    {
+      "file": "MSVE_v0.8.8.1_OWNER_HANDOFF.md",
+      "bytes": 2625,
+      "sha256": "433de3a16d18332960a4d84966d4c04f7c6f259e62cbb9d4bebafd555fdf48af"
+    }
+  ]
+}

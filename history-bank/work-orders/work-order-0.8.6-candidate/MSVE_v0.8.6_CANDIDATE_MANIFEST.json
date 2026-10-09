@@ -1,0 +1,89 @@
+{
+  "work_order": "0.8.6",
+  "date": "2026-10-09",
+  "status": "CORRECTION CANDIDATE PREPARED \u2014 OWNER REVIEW PENDING",
+  "base_candidate_spec_sha256": "9f692585cfe9c4e9322afdb75d2ff52081fcdd55ffbcc59f5a21f5251fa7c003",
+  "solver": "z3 5.1.0",
+  "artefacts": [
+    {
+      "path": "MSVE_ACCEPTANCE_PLAN_v0.8.md",
+      "bytes": 10543,
+      "sha256": "3f9fcaf291f1e79fe563fd9b9d679db1820d6d3af13af4df0cc4c7e8bc89395d"
+    },
+    {
+      "path": "MSVE_CAPABILITY_MATRIX_v0.8.md",
+      "bytes": 2022,
+      "sha256": "28838a24eeae5a81557a86fb3c6beb64e32fb17e27e32aeaea94a017a7691d2f"
+    },
+    {
+      "path": "MSVE_DESIGN_REVIEW_v0.8.md",
+      "bytes": 11156,
+      "sha256": "d7be8c8db1c1e2f1db73efac8287ec3545c2390829f8c43f008fa46093671015"
+    },
+    {
+      "path": "MSVE_DESIGN_SPEC_v0.8.md",
+      "bytes": 88466,
+      "sha256": "13a5aced8bb77cb25394ea7ba324e5bb732fefaa9c213e797dfee48638050245"
+    },
+    {
+      "path": "MSVE_REGRESSION_LEDGER_v0.8.md",
+      "bytes": 36295,
+      "sha256": "71146f7c5e913d43aadc23f2bb5819c9b4cfcb5f1ccb1e72a845fef8a46fe717"
+    },
+    {
+      "path": "MSVE_VISUALISATION_PLAN_v0.8.md",
+      "bytes": 6697,
+      "sha256": "fb03b6098aecb6b98ca31cf0c9eac092620075480c59def0602f122c449e28dd"
+    },
+    {
+      "path": "MSVE_v0.8.6_CORRECTION_REPORT.md",
+      "bytes": 5647,
+      "sha256": "3cc6ec08dae210e7394abb7aed5ffad66a654f5761481b607cbc7e77defdcfe4"
+    },
+    {
+      "path": "MSVE_v0.8.6_CROSS_DOCUMENT_MATRIX.md",
+      "bytes": 1772,
+      "sha256": "103dc254185f7feb44ebe4dcb40dcb0add9cfc19245c6705043e03f037a2173e"
+    },
+    {
+      "path": "MSVE_v0.8.6_F20_VERIFICATION.md",
+      "bytes": 2272,
+      "sha256": "221e763fe42f6bed336a21109622bd3d0158f070fea2f334505271e9e479d14b"
+    },
+    {
+      "path": "MSVE_v0.8.6_F21_ASSURANCE_EVIDENCE_RULES.md",
+      "bytes": 3198,
+      "sha256": "c7fc9ae07b080b662882cf5d0d76592edbbfc6cf2cb37dc5638fbeacb54cb547"
+    },
+    {
+      "path": "MSVE_v0.8.6_OWNER_HANDOFF.md",
+      "bytes": 2492,
+      "sha256": "c3d17d4ca270a1fe46534438ef577b18883dcd1e1e7781288d8cbb140ce603f2"
+    },
+    {
+      "path": "MSVE_v0.8.6_VERIFICATION_EVIDENCE.md",
+      "bytes": 2688,
+      "sha256": "3af2e4cff27ab88ef749ea112aedee889bf8e88dc68f41f3c73ac056a35573a4"
+    },
+    {
+      "path": "MSVE_v0.8_DEFECT_TRACEABILITY.md",
+      "bytes": 8287,
+      "sha256": "4e41185dcddf91ed8e8d4dbe010cf301d24ad9003008af89859fd79c8d656759"
+    },
+    {
+      "path": "MSVE_v0.8_READINESS_EVIDENCE_MATRIX.md",
+      "bytes": 11367,
+      "sha256": "608e2c89e03bb1ba13c873a957f34153d1aee597ad1cce021640ac4d15ec077f"
+    },
+    {
+      "path": "audit_model_086.py",
+      "bytes": 16341,
+      "sha256": "99d68de70bddec92e0f45f4cee1863856a7ec7d10e6fec6868d67d472ac562de"
+    },
+    {
+      "path": "run_audit_086.py",
+      "bytes": 10278,
+      "sha256": "e91cc967e8d39271822b761213d1841e9bec8ee22fb868302b6f288852486ead"
+    }
+  ]
+}

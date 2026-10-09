@@ -1,0 +1,11 @@
+spec to_rat_ok
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+define r : Rat = to_rat(1.5)
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

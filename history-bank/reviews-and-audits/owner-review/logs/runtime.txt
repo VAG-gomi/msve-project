@@ -1,0 +1,8 @@
+Python 3.12.3
+Package           Version
+----------------- ----------
+appdirs           1.4.4
+attrs             23.2.0
+Brotli            1.1.0
+---
+3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]

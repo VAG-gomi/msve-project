@@ -1,0 +1,324 @@
+[
+ {
+  "file": "record-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "record-nested.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "record-dup-field.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "type",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "record-unknown-field.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "type",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "record-missing-field.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "type",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "record-field-type-mismatch.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "type",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "record-infer.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "syntax",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "quant-parens-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "quant-nested-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "bare-quantifier.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "syntax",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "arith-neg3-plus2.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "arith-mixed-real-nat.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "type",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "arith-nat-int-embed.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "arith-unary-minus-nat.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "arith-div-int-exact.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "is_some-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "unbound-ident.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "name-resolution",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "to_rat-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "range-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "f64-valid.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "f64-neg-zero-exp.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "lexical",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "f64-upper-hex.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "lexical",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "f64-normal-form-subnormal.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "canonical",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "string-escape-upper.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "canonical",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "string-escape-not-short.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "canonical",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "string-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "case-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "let-ok.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-diff-plus-fuzz.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-duplicate-test.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-proof-conflict.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-recompute-conflict.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-test-none-conflict.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-qualifier-default.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-cases-zero.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-assurance-level-a-needs-proof.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "limits-timeout-range.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "limits-steps-zero.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "verif-assurance-level-a-unavailable.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "type-cyclic-alias.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "type-unbound-name.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "name-resolution",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "define-shadow-builtin.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "name-resolution",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "f64-subtraction-no-spaces.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "call-local-fn.msve",
+  "manifest_expected": "pass",
+  "manifest_category": null,
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "quant-option-domain.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "type",
+  "corpus_verdict": "PASS",
+  "match": true
+ },
+ {
+  "file": "proj-path-unresolvable.msve",
+  "manifest_expected": "fail",
+  "manifest_category": "admission",
+  "corpus_verdict": "PASS",
+  "match": true
+ }
+]

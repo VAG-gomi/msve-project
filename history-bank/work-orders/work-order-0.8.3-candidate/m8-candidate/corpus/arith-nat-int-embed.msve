@@ -1,0 +1,11 @@
+spec arith_nat_int_embed
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+define v : Int = 5 + -3
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

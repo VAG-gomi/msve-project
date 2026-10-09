@@ -1,0 +1,61 @@
+{
+  "work_order": "0.8.7",
+  "date": "2026-10-09",
+  "status": "CORRECTION CANDIDATE PREPARED \u2014 OWNER REVIEW REQUIRED",
+  "artefacts": [
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/MSVE_DESIGN_SPEC_v0.8.md",
+      "description": "candidate spec (0.8.7 normative revisions)",
+      "bytes": 90405,
+      "sha256": "77926f8c0311b0ad1092654b70aeb4982fb2c77699cd1005b06f572fbe4cca60"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/audit_model_087.py",
+      "description": "formal model (31 constraints, F-22..F-27)",
+      "bytes": 18333,
+      "sha256": "e49aee04a0c2b5ecee8d4981d0abc46b5d3b355bc9f23ed721b2eb6a7acaac56"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/run_audit_087.py",
+      "description": "regression tests (18 cases)",
+      "bytes": 12576,
+      "sha256": "c343ea23022e575dfa3466db71657b5edde6541f46057b329912fd7a63f54474"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/run_audit_087_raw.log",
+      "description": "raw test output log",
+      "bytes": 1385,
+      "sha256": "94816387678c057f760086df1e6e025cfac50e389fc552687602b8375c6890b3"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/sat_models_087.json",
+      "description": "SAT witness models",
+      "bytes": 9655,
+      "sha256": "bbd1e5015efcb8c85033873527f5363ca99e0a63c4a0d66d15aa004c92589755"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/MSVE_v0.8.7_COVERAGE_MATRIX.md",
+      "description": "Work 1 coverage matrix",
+      "bytes": 2316,
+      "sha256": "8a3a15cc1d0a19c5718f830e012d5af7155c7d2cace5d114401f793e1630062b"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/MSVE_REGRESSION_LEDGER_v0.8.md",
+      "description": "regression ledger (F-22..F-27 added)",
+      "bytes": 37814,
+      "sha256": "7290681eac3705741615718ca3f2c3eafbafe759885e186cf1cd7408eb8dc9ec"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/MSVE_v0.8.7_OWNER_HANDOFF.md",
+      "description": "owner handoff",
+      "bytes": 2072,
+      "sha256": "741ee69a12f341041fe38d1e1f2503200d65df5bae30d2173d2e3b1920e965c7"
+    },
+    {
+      "source_path": "/home/hatch/workspace/msve-design/work-order-0.8.7-candidate/MSVE_v0.8.7_DISPOSITION_TABLE.md",
+      "description": "F-22..F-27 disposition table",
+      "bytes": 3015,
+      "sha256": "101a31026a1302fe14716cadb9eaa0afb3cbf30319f2f87825e0289971cd2fee"
+    }
+  ]
+}

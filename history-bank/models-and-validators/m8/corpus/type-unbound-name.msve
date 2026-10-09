@@ -1,0 +1,9 @@
+spec type-unbound-name
+version 0.8.0
+scope exact-arithmetic
+authors ["t"]
+define f(x: Ghost): Nat = 1
+goal derive 1
+verification { proof: none; }
+limits { timeout: 10s; }
+record: all

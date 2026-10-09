@@ -1,0 +1,12 @@
+spec record_unknown_field
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+type Pair = { x: Nat, y: Nat }
+define p : Pair = { x: 1, y: 2, z: 3 }
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all

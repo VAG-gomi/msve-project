@@ -1,0 +1,11 @@
+spec verif_recompute_conflict
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+goal derive 1
+verification {
+  recompute: none;
+  recompute: by recompute-checker/1.0.0 required;
+}
+limits { timeout: 10s; }
+record: all

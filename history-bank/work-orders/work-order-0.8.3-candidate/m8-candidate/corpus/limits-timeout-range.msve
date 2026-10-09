@@ -1,0 +1,8 @@
+spec limits-timeout-range
+version 0.8.0
+scope exact-arithmetic
+authors ["t"]
+goal derive 1
+verification { proof: none; }
+limits { timeout: 9999h; }
+record: all

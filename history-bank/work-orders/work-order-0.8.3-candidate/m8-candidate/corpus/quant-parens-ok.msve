@@ -1,0 +1,11 @@
+spec quant_parens_ok
+version 0.8.0
+scope m8-corpus
+authors ["m8"]
+define p : Bool = forall x in type Nat :: (x >= 0)
+goal derive 1
+verification {
+  proof: none;
+}
+limits { timeout: 10s; }
+record: all
