@@ -33,6 +33,9 @@ conversational memory.
   source inventory (46 files), per-era execution evidence (0.8.4–0.8.8.1,
   M8 tests/tools), reconstructed-input provenance, patched harnesses,
   environment register, and known blockers.
+- `decision-ledger/` — brainstorm and decision ledger (26 records) plus the
+  bounded owner decision packet (D1–D9). Start here for what is decided,
+  what is open, and what each choice requires.
 
 ## What is NOT authorised
 

@@ -164,3 +164,16 @@ Historical reports untouched; corrections are in current-status records only.
    itself record file hashes. Historical records preserved unchanged.
 3. Root `README.md`: continuity bullet now directs readers to the
    PROJECT_STATE.md notice first.
+
+## 2026-10-09 — Brainstorm synthesis and owner decision packet (MSVE-WO-0.9)
+
+- Added `decision-ledger/`: MSVE_BRAINSTORM_DECISION_LEDGER.csv (26
+  records: 7 ACCEPTED-BY-OWNER, 4 SUPPORTED, 4 PROPOSED, 2 CONFLICTED,
+  1 DEFERRED, 8 UNRESOLVED), OWNER_DECISION_PACKET.md (D1–D9 with options,
+  arguments, spec constraints, recommendations), README.md with tracing
+  guide. Covers UNKNOWN policy, seven claim kinds (with inv 22/23
+  dependencies), query/assumption fidelity, checker independence, slot
+  bounds, canonical escaping, freeze criteria, V0 scope, and the §H
+  archival-bank vs implementation-repo clarification.
+- Root README links the ledger. No candidate, spec, model, or test files
+  modified; no experiments run.
