@@ -25,12 +25,17 @@ at the named commit.
 | `604db7e` | Pre-audit (HISTORY-CHECK-001) | 424 | 3,963,072 |
 | `d83c9de` | Audit (REPO-AUDIT-002) | 427 | 4,091,804 |
 | `93b6117` | Bookkeeping correction | 427 | 4,093,379 |
-| `THIS_COMMIT` | Chronology correction (RECONCILIATION-003) | 427 | 4,094,558 |
+| `64e75c947980ebc8ed93eab8ccc1601fcfbc80ba` | Chronology correction (RECONCILIATION-003) | 427 | 4,094,858 |
+| `27ba081add992a944dc266c05631ded10102af6d` | Manifest sync with corrected tree | 427 | 4,094,858 |
 
 The audit added three files over the pre-audit tree:
 `REPOSITORY_MANIFEST.csv`, `SOURCE_READER_GUIDE.csv`,
 `REPOSITORY_AUDIT_REPORT.md`. The bookkeeping correction modified two
-files (CHANGELOG.md, REPOSITORY_AUDIT_REPORT.md).
+files (CHANGELOG.md, REPOSITORY_AUDIT_REPORT.md). Byte totals above are
+git blob sizes (`git cat-file -s`), the authoritative committed-tree
+measure. The commit containing this report version is a child of
+`27ba081`; its own SHA is recorded in CHANGELOG.md, not in this table,
+to avoid a self-reference.
 
 - **Files with measured size + SHA-256:** 427/427 in
   `history-bank/REPOSITORY_MANIFEST.csv` (mechanically generated from the

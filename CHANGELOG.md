@@ -93,3 +93,11 @@ or imply historical checks that did not occur.
 - Regenerated `history-bank/REPOSITORY_MANIFEST.csv` (427 rows) to match
   the corrected tree. Manifest self-hash remains the documented exception.
 - No candidate, historical, or raw-log file modified. No history rewritten.
+
+## 2026-10-09 — Audit table final correction (external review)
+
+- Replaced the `THIS_COMMIT` placeholder in `REPOSITORY_AUDIT_REPORT.md`
+  with explicit full-SHA rows for `64e75c9` and `27ba081` (both: 427 files,
+  4,094,858 bytes by git blob size). The current commit's own SHA is
+  recorded here, not in the report table, to avoid self-reference.
+- No other content changed.
