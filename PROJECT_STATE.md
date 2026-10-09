@@ -20,7 +20,9 @@ and re-verified (9/9 regression tests pass; raw log preserved).
 - Version 0.8.8.1 approved or production-ready. It is not.
 - MSVE engine implementation.
 - Vertical-slice experiment or any experimental run.
-- Publication or release beyond this private archival repository.
+- Design baseline approval or product release. (Note: this repository is
+  PUBLIC by owner instruction as an archival record; public visibility is
+  not a design freeze, baseline approval, or product release.)
 
 Each of the above requires a separate explicit owner decision.
 

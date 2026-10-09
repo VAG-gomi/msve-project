@@ -59,8 +59,14 @@ was not executed.
 - **Evidence:** `MSVE_v0.8.8_NORMATIVE_REVIEW.md`,
   `MSVE_v0.8.8_MODEL_REVIEW.md`, `MSVE_v0.8.8.1_NORMATIVE_REVIEW.md`,
   `MSVE_v0.8.8.1_MODEL_REVIEW.md`, reconciliation records.
-- **Note:** the 0.8.8.1 model re-inspection was performed on the final hash
-  (`fc6eb49f…`) — the strongest verification linkage in the project.
+- **Hash provenance (corrected):** the 0.8.8.1 normative review report
+  records the spec hash it inspected as `69828cb4…` (95,530 bytes) —
+  the pre-repair spec, identical to the 0.8.8 spec at review time.
+  The three blocking findings were repaired; the final spec is
+  `dbc610c3…` (96,366 bytes). No re-review of the final spec hash is
+  documented. The 0.8.8.1 model re-inspection WAS performed on the final
+  model hash (`fc6eb49f…`) — the strongest verification linkage in the
+  project. Do not conflate the two.
 
 ## Claims NOT made
 

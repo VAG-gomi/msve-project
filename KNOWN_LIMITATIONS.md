@@ -33,6 +33,18 @@ items are not interchangeable.
 - Two verification records, two descriptor slots, two solver invocations per
   result record. A third of any is unrepresentable in the model.
 
+## Clean-clone reproducibility
+
+- `audit_model_0881.py` line 20 loads code lists from the absolute path
+  `/tmp/m8test/codelists.json`, a file external to this repository.
+- `run_audit_0881.py` hardcodes the absolute workspace path
+  `/home/hatch/workspace/msve-design/work-order-0.8.8.1-candidate`
+  (import path line 7; witness output path line 210).
+- A fresh clone therefore cannot reproduce the 9/9 run without
+  reconstructing these paths and the external codelists file. The
+  candidate code is preserved unmodified; this is a documented
+  limitation, not a defect introduced by archival.
+
 ## Unresolved (see OPEN_DECISIONS.md)
 
 - Seven claim kinds without defined outcome interpretation.

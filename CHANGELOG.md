@@ -101,3 +101,26 @@ or imply historical checks that did not occur.
   4,094,858 bytes by git blob size). The current commit's own SHA is
   recorded here, not in the report table, to avoid self-reference.
 - No other content changed.
+
+## 2026-10-09 — Cold-start documentation corrections (MSVE-COLDSTART-CORRECTIONS-001)
+
+Verified each finding against original sources before correcting:
+
+1. `PROJECT_STATE.md`: removed "private archival repository" language.
+   The archive is PUBLIC by owner instruction; public visibility is
+   distinguished from baseline approval and product release.
+2. `history-bank/VERIFICATION_HISTORY.md` Claim 6: clarified that the
+   0.8.8.1 normative review inspected the pre-repair spec hash `69828cb4…`,
+   not the final `dbc610c3…`. No final-hash normative re-review is
+   documented. (Model re-inspection WAS on the final hash.)
+3. `ARTIFACT_REGISTER.md`: distinguished the raw log's contents (no hashes
+   recorded) from the REPORTED log-to-hash association (via FINAL_HANDOFF /
+   FINAL_MANIFEST).
+4. SemanticResult: verified the spec defines a closed set of 11
+   alternatives; no secondary description claimed otherwise. No change.
+5. `KNOWN_LIMITATIONS.md`: recorded absolute-path dependencies
+   (`/tmp/m8test/codelists.json`; hardcoded workspace paths) and the
+   resulting clean-clone reproducibility limitation. Candidate code
+   unmodified.
+
+Historical reports untouched; corrections are in current-status records only.

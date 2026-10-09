@@ -27,6 +27,13 @@ per-file hashes of the continuity package itself.
 
 The continuity record reports 9/9 regression tests passing with the raw log
 above corresponding to the final candidate hashes (timestamp
-2026-10-09T14:52:51Z, Python 3.12.3, Z3 5.1.0, exit 0). This work order did
+2026-10-09T14:52:51Z, Python 3.12.3, Z3 5.1.0, exit 0).
+
+**Provenance distinction:** the raw log itself records the timestamp,
+environment, command, working directory, nine test outcomes, and exit 0 —
+it does NOT record any file hashes. The association between this log and
+the final candidate hashes (`dbc610c3…`, `fc6eb49f…`) is REPORTED via
+`MSVE_v0.8.8.1_FINAL_HANDOFF.md` and `MSVE_v0.8.8.1_FINAL_MANIFEST.json`,
+not self-evident from the log bytes. This work order did
 not re-run the test suite; the result is preserved as a reported
 verification result attributable to work order 0.8.8.1-FINAL.
