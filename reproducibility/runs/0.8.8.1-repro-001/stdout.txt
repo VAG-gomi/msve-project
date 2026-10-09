@@ -1,0 +1,11 @@
+PASS [R1 pkg encodable, result present] solver=sat expected=sat
+PASS [C2 proof, correct claim_id] solver=sat expected=sat
+PASS [C3 HOLDS + TEST_BACKED] solver=sat expected=sat
+PASS [O1 holds+UNSAT solver-backed] solver=sat expected=sat
+PASS [O2 holds+UNKNOWN rejected] solver=unsat expected=unsat
+PASS [O3 derive+UNSAT rejected (diagnostic)] solver=unsat expected=unsat
+PASS [D4 missing descriptor field rejected] solver=unsat expected=unsat
+PASS [V5 vr spec_version mismatch rejected] solver=unsat expected=unsat
+PASS [D6 2+2 vs 8/2 distinct rejected] solver=unsat expected=unsat
+
+9/9 0.8.8.1 checks behaved as expected

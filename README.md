@@ -27,6 +27,10 @@ conversational memory.
 - `KNOWN_LIMITATIONS.md` — disclosed limits and attestations.
 - `ARTIFACT_REGISTER.md` — every archived artifact with measured hashes.
 - `CHANGELOG.md` — truthful record of repository changes.
+- `reproducibility/` — repository-wide Python reproducibility records:
+  source inventory (46 files), per-era execution evidence (0.8.4–0.8.8.1,
+  M8 tests/tools), reconstructed-input provenance, patched harnesses,
+  environment register, and known blockers.
 
 ## What is NOT authorised
 

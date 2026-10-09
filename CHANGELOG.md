@@ -134,3 +134,19 @@ Historical reports untouched; corrections are in current-status records only.
   `fc6eb49f…`; the 9/9 result remains reported with documented provenance
   limits. No other status summary carried the same implication.
 - Historical reports preserved as written.
+
+## 2026-10-09 — Repository-wide Python reproducibility records (MSVE-PYTHON-REPRO-001)
+
+- Added `reproducibility/`: PYTHON_SOURCE_INVENTORY.csv (46 tracked .py
+  files, 33 distinct sources), REPRODUCIBILITY_MATRIX.csv,
+  ENVIRONMENT_REGISTER.md, KNOWN_BLOCKERS.md, per-era run evidence
+  (0.8.4–0.8.8.1, M8 tests/tools/CLI), patched harnesses with provenance,
+  and reports. All 12+12 ZIP .py members verified byte-identical to
+  tracked files.
+- Results: 21 files REPRODUCED (0.8.8.1 9/9, 0.8.8 16/16, 0.8.7 18/18,
+  0.8.6 13/13, 0.8.4 45/46 with documented joint-SAT miss, 0.8.5/0.8.5.2
+  scripts), 9 TESTS-PASSED (M8 suites, CLI, tools), 16 STATIC-ONLY
+  (library modules, import-verified). No FAILED or BLOCKED.
+- All Z3 runs used reconstructed code lists, labelled RECONSTRUCTED — NOT
+  THE HISTORICAL ORIGINAL. Historical artifacts and candidate sources
+  unchanged. Linked from root README.

@@ -1,0 +1,13 @@
+F21-1 valid Level A (proof artifact + PASS record): solver=sat
+F21-2 Level A, KERNEL_PROOF, no evidence (no proof artifact, no verif records, NOT_RUN): solver=sat
+F21-3 Level A via INDEPENDENT_RECOMPUTE (+ recompute PASS record): solver=sat
+F21-3b Level A via INDEPENDENT_RECOMPUTE, no agreement evidence: solver=sat
+F21-4 Level A required, LEVEL_B achieved, shortfall: solver=sat
+F21-5 LEVEL_A achieved + KERNEL_PROOF basis + INCONCLUSIVE semantic result: solver=sat
+
+F21-1 (valid, expect sat): sat
+F21-2 (evidence-free basis, gap if sat): sat
+F21-3 (recompute+agreement, expect sat): sat
+F21-3b (recompute no agreement, gap if sat): sat
+F21-4 (shortfall, expect sat): sat
+F21-5 (Level A on INCONCLUSIVE, gap if sat): sat

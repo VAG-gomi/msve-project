@@ -1,0 +1,71 @@
+{
+ "scenario": "S1 derived+packaged",
+ "admission": "ACCEPTED",
+ "execution": "COMPLETED",
+ "packaging": "PACKAGING_OK",
+ "has_semres": "True",
+ "semantic_result": "DERIVED_VALUE(True,\n              aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,\n              bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb)",
+ "assurance": {
+  "assur_req": "LEVEL_A",
+  "assur_ach": "LEVEL_A",
+  "assur_short": "False",
+  "has_shortdesc": "False"
+ },
+ "bases": {
+  "KERNEL_PROOF": "True",
+  "INDEPENDENT_RECOMPUTE": "False",
+  "SOLVER_BACKED": "False",
+  "TEST_BACKED": "False"
+ },
+ "summary": "SM_NOT_RUN",
+ "has_partial": "False",
+ "has_solver": "False"
+}
+---
+{
+ "scenario": "S3 unencodable+15b",
+ "admission": "ACCEPTED",
+ "execution": "INTERNAL_ERROR(output-not-encodable: Binary64 NaN)",
+ "packaging": "PACKAGING_FAILED(output-not-encodable)",
+ "has_semres": "True",
+ "semantic_result": "DERIVED_VALUE(False,\n              dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd,\n              eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee)",
+ "assurance": {
+  "assur_req": "LEVEL_A",
+  "assur_ach": "LV_NONE",
+  "assur_short": "True",
+  "has_shortdesc": "True"
+ },
+ "bases": {
+  "KERNEL_PROOF": "False",
+  "INDEPENDENT_RECOMPUTE": "False",
+  "SOLVER_BACKED": "False",
+  "TEST_BACKED": "False"
+ },
+ "summary": "SM_NOT_RUN",
+ "has_partial": "False",
+ "has_solver": "False"
+}
+---
+{
+ "scenario": "S5 invalid-input",
+ "admission": "INVALID_INPUT(unbound-identifier: foo)",
+ "execution": "NOT_STARTED",
+ "packaging": "PACKAGING_OK",
+ "has_semres": "False",
+ "assurance": {
+  "assur_req": "LV_NONE",
+  "assur_ach": "LV_NONE",
+  "assur_short": "False",
+  "has_shortdesc": "False"
+ },
+ "bases": {
+  "KERNEL_PROOF": "False",
+  "INDEPENDENT_RECOMPUTE": "False",
+  "SOLVER_BACKED": "False",
+  "TEST_BACKED": "False"
+ },
+ "summary": "SM_NOT_RUN",
+ "has_partial": "False",
+ "has_solver": "False"
+}
+---

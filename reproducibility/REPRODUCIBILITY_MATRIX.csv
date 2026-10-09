@@ -1,0 +1,16 @@
+source_id,attempt,command,environment,result,evidence
+PY-001/PY-002 (0.8.8.1 model+driver),"catalogued from MSVE-REPRO-001 (verified artifacts, not re-run)",venv/bin/python run_audit_0881.py (patched copy),"py3.12.3, z3-solver 5.1.0.0, Z3 5.1.0, reconstructed codelists","REPRODUCED — 9/9, lines identical to archived log",runs/0.8.8.1-repro-001/
+PY-033/PY-034 (0.8.8 model+driver),"single run, scratch copy",venv/bin/python run_audit_088.py (patched copy),same as above,"REPRODUCED — 16/16, lines identical to archived log",runs/0.8.8-repro-001/
+PY-031/PY-032 (0.8.7 model+driver),"single run, scratch copy",venv/bin/python run_audit_087.py (patched copy),same as above,"REPRODUCED — 18/18, lines identical to archived log",runs/0.8.7-repro-001/
+PY-029/PY-030 (0.8.6 model+driver),"single run, scratch copy",venv/bin/python run_audit_086.py (patched copy),same as above,"REPRODUCED — 13/13, matches correction report",runs/0.8.6-repro-001/
+PY-026/PY-027/PY-028 (0.8.4 model+driver+dump),"single runs, scratch copies",venv/bin/python run_audit.py; venv/bin/python dump_witnesses.py,same as above,REPRODUCED — 45/46 with documented joint-SAT unknown miss; dump exit 0,runs/0.8.4-repro-001/
+PY-024/PY-025 (0.8.5 scripts),"single runs, scratch copies",venv/bin/python dump_assignment.py; venv/bin/python f20_adjudication.py,same as above,REPRODUCED — dump exit 0; F-20 ALL AS EXPECTED,runs/0.8.5-repro-001/
+PY-023 (0.8.5.2 f21 tests),"single run, scratch copy",venv/bin/python f21_assurance_tests.py,same as above,REPRODUCED — 6/6 sat incl. gap demonstrations,runs/0.8.5.2-repro-001/
+M8 test_canonical (both variants),direct execution,PYTHONPATH=. python m8/tests/test_canonical.py,py3.12.3 stdlib only,TESTS-PASSED — all assertions hold,runs/m8-tests/
+M8 test_grammar_conformance,direct execution,PYTHONPATH=. python m8/tests/test_grammar_conformance.py,py3.12.3 stdlib only,TESTS-PASSED,runs/m8-tests/
+M8 cli,direct execution,python -m m8.cli corpus; python -m m8.cli check <file>,py3.12.3 stdlib only,TESTS-PASSED — corpus 0 failures; check PASS,runs/m8-tests/
+M8 gen_corpus,direct execution (scratch),python m8/corpus/gen_corpus.py,py3.12.3 stdlib only,REPRODUCED — 36 files + manifest written,runs/m8-tests/
+tools/check_f64.py,direct execution,python tools/check_f64.py,py3.12.3 stdlib only,"TESTS-PASSED — M6 OK, 19451 values",runs/m8-tests/
+tools/check_grammar.py,direct execution,python tools/check_grammar.py <v0.6 spec>,py3.12.3 stdlib only,TESTS-PASSED,runs/m8-tests/
+tools/check_identifiers.py,direct execution,python tools/check_identifiers.py <v0.6 spec>,py3.12.3 stdlib only,TESTS-PASSED,runs/m8-tests/
+M8 library modules (11 distinct),import check,"python -c 'import m8.grammar, ...'",py3.12.3 stdlib only,STATIC-ONLY — all import cleanly,reports/m8-library.md

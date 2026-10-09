@@ -1,0 +1,42 @@
+num_invariant_constraints=26
+{
+ "admission": "ACCEPTED",
+ "execution": "COMPLETED",
+ "packaging": "PACKAGING_OK",
+ "has_semres": "true",
+ "semres": "(DERIVED_VALUE true\n               \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n               \"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\")",
+ "solver_outcome": "\"\"",
+ "has_solver": "false",
+ "assur_req": "LEVEL_A",
+ "assur_ach": "LEVEL_A",
+ "assur_short": "false",
+ "has_shortdesc": "false",
+ "summary": "SM_NOT_RUN",
+ "verif_inputs_ref": "\"\"",
+ "disc_present": "false",
+ "disc_open": "true",
+ "has_partial": "false",
+ "bases": {
+  "KERNEL_PROOF": "true",
+  "INDEPENDENT_RECOMPUTE": "false",
+  "SOLVER_BACKED": "false",
+  "TEST_BACKED": "false"
+ },
+ "vr": [
+  {
+   "present": "false",
+   "result": "VR_INCONCLUSIVE",
+   "required": "false",
+   "inputs_ref": "\"\""
+  },
+  {
+   "present": "false",
+   "result": "VR_INCONCLUSIVE",
+   "required": "false",
+   "inputs_ref": "\"\""
+  }
+ ],
+ "resolves(aaaaaaaa..,constructed_artifacts)": "true",
+ "resolves(bbbbbbbb..,derivation_records)": "true",
+ "resolves(xxxxxxxx..,witnesses)": "true"
+}

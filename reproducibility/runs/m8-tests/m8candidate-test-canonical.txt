@@ -1,0 +1,2 @@
+test_canonical: all assertions hold
+PASS

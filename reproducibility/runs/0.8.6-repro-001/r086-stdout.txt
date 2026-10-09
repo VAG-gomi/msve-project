@@ -1,0 +1,15 @@
+PASS [R1 pkg-fail encodable, result present] solver=sat expected=sat
+PASS [R2 pkg-fail canonicalization, result present] solver=sat expected=sat
+PASS [R3a pkg-fail encodable, result missing] solver=unsat expected=unsat
+PASS [R3b pkg-fail canonicalization, result missing] solver=unsat expected=unsat
+PASS [R4 Level A + KERNEL_PROOF + evidence] solver=sat expected=sat
+PASS [R5 Level A + KERNEL_PROOF, no evidence] solver=unsat expected=unsat
+PASS [R6 Level A + RECOMPUTE + agreement] solver=sat expected=sat
+PASS [R7 Level A + RECOMPUTE, no agreement] solver=unsat expected=unsat
+PASS [R8 Level A on INCONCLUSIVE] solver=unsat expected=unsat
+PASS [R9 shortfall Level A->B, inconclusive] solver=sat expected=sat
+PASS [R10 Level B + solver/test evidence] solver=sat expected=sat
+PASS [R11 proof record, unresolved artifact] solver=unsat expected=unsat
+PASS [R12 Level A claim, proof record FAIL] solver=unsat expected=unsat
+
+13/13 0.8.6 regression checks behaved as expected

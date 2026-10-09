@@ -1,0 +1,3 @@
+defined nonterminals: 47
+referenced nonterminals: 55
+OK: every referenced nonterminal is defined or lexical.

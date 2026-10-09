@@ -1,0 +1,5 @@
+F20-W valid (current encoding): solver=sat
+F20-X adversarial (current encoding): solver=sat
+F20-X adversarial (corrected inv-10): solver=unsat
+F20-W valid (corrected inv-10): solver=sat
+F-20 adjudication checks: ALL AS EXPECTED

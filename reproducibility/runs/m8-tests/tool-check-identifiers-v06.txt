@@ -1,0 +1,6 @@
+example 0: all identifiers resolve
+example 1: all identifiers resolve
+example 2: all identifiers resolve
+example 3: all identifiers resolve
+example 4: all identifiers resolve
+example 5: all identifiers resolve

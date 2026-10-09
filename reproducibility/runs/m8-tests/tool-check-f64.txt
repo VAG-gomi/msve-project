@@ -1,0 +1,3 @@
+collision pairs: old ambiguous forms rejected, unique forms accepted
+round-trip: 19451 values OK (incl. subnormals, ±0, extremes)
+M6: OK
