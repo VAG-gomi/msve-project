@@ -2,6 +2,37 @@
 
 Canonical project bank for MSVE (Mathematical Structure and Verification Engine).
 
+## What is MSVE?
+
+MSVE is a proposed system for constructing and evaluating mathematical
+results while making explicit what each result means, what evidence
+supports it, and what remains unverified. Its central purpose is to make
+mathematical verification claims traceable and challengeable, rather than
+treating every successful calculation, solver response, or test as
+equivalent evidence.
+
+It is designed as a three-stage process: **decode** a structured
+mathematical input, **validate** it against requirements and declared
+scope, and **produce a typed result** linked to the relevant claims and
+supporting evidence.
+
+MSVE distinguishes assurance methods with different limits: kernel-checked
+proofs, independent recomputation, solver-backed evidence, and test-backed
+evidence. A solver observation is not automatically a proof, and passing
+tests do not establish universal correctness. Uncertainty, unsupported
+cases, and verification failures are preserved rather than silently
+converted into successful conclusions.
+
+**Current reality:** MSVE is still a design candidate — a complete engine
+has not been authorised for implementation. This repository holds the
+[design specification](candidate/0.8.8.1/MSVE_DESIGN_SPEC_v0.8.md), formal
+model, Python tools, test and reproduction evidence, historical records,
+limitations, and open decisions. Status:
+**CORRECTION CANDIDATE PREPARED — OWNER REVIEW REQUIRED** (see
+[PROJECT_STATE.md](PROJECT_STATE.md) and
+[KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md)). The version label
+"0.8.8.1-FINAL" does not mean an approved or frozen baseline.
+
 ## What this is
 
 A version-controlled archive of the MSVE design specification, its formal

@@ -177,3 +177,13 @@ Historical reports untouched; corrections are in current-status records only.
   archival-bank vs implementation-repo clarification.
 - Root README links the ledger. No candidate, spec, model, or test files
   modified; no experiments run.
+
+## 2026-10-09 — Repository entrance explanation (MSVE-README-001)
+
+- Root `README.md`: added a concise "What is MSVE?" section after the
+  project title, before repository navigation. Covers purpose, the
+  decode→validate→typed-result process, assurance-method distinctions,
+  and current reality (design candidate; no engine authorised; 0.8.8.1-FINAL
+  is not an approved baseline). Links to the design specification,
+  PROJECT_STATE.md, and KNOWN_LIMITATIONS.md. All statements checked
+  against the spec and state records; no new claims introduced.
