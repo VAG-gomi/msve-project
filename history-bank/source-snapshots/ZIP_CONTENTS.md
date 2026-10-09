@@ -1,17 +1,235 @@
-Archive:  source-snapshots/MSVE_v0.8_OWNER_REVIEW_BUNDLE.zip
-  Length      Date    Time    Name
----------  ---------- -----   ----
-        0  2026-10-09 11:52   owner-review/
-     3421  2026-10-09 11:52   owner-review/MSVE_v0.8_OWNER_REVIEW_HANDOFF.md
-     7805  2026-10-09 11:52   owner-review/MSVE_v0.8_DEFECT_TRACEABILITY.md
-    10060  2026-10-09 11:52   owner-review/MSVE_v0.8_READINESS_EVIDENCE_MATRIX.md
-    10847  2026-10-09 11:52   owner-review/MSVE_v0.8_OWNER_REVIEW_MANIFEST.md
+# ZIP bundle contents (complete listings)
 
-Archive:  source-snapshots/MSVE_v0.8.3_CANDIDATE_BUNDLE.zip
-  Length      Date    Time    Name
----------  ---------- -----   ----
-        0  2026-10-09 12:51   work-order-0.8.3-candidate/
-    83036  2026-10-09 12:49   work-order-0.8.3-candidate/MSVE_DESIGN_SPEC_v0.8.md
-    11156  2026-10-09 12:49   work-order-0.8.3-candidate/MSVE_DESIGN_REVIEW_v0.8.md
-     2022  2026-10-09 12:49   work-order-0.8.3-candidate/MSVE_CAPABILITY_MATRIX_v0.8.md
-     8935  2026-10-09 12:49   work-order-0.8.3-candidate/MSVE_ACCEPTANCE_PLAN_v0.8.md
+## MSVE_v0.8_OWNER_REVIEW_BUNDLE.zip
+111 entries, 422335 bytes uncompressed
+
+-        0  m8/
+-     3896  m8/README.md
+-       67  m8/__init__.py
+-    13480  m8/canonical.py
+-     5930  m8/cli.py
+-        0  m8/corpus/
+-      176  m8/corpus/arith-div-int-exact.msve
+-      180  m8/corpus/arith-mixed-real-nat.msve
+-      177  m8/corpus/arith-nat-int-embed.msve
+-      174  m8/corpus/arith-neg3-plus2.msve
+-      175  m8/corpus/arith-unary-minus-nat.msve
+-      198  m8/corpus/bare-quantifier.msve
+-      245  m8/corpus/call-local-fn.msve
+-      203  m8/corpus/case-ok.msve
+-      179  m8/corpus/define-shadow-builtin.msve
+-      193  m8/corpus/f64-neg-zero-exp.msve
+-      205  m8/corpus/f64-normal-form-subnormal.msve
+-      226  m8/corpus/f64-subtraction-no-spaces.msve
+-      190  m8/corpus/f64-upper-hex.msve
+-      186  m8/corpus/f64-valid.msve
+-     6589  m8/corpus/gen_corpus.py
+-      179  m8/corpus/is_some-ok.msve
+-      176  m8/corpus/let-ok.msve
+-      165  m8/corpus/limits-steps-zero.msve
+-      160  m8/corpus/limits-timeout-range.msve
+-     3920  m8/corpus/manifest.json
+-      290  m8/corpus/proj-path-unresolvable.msve
+-      232  m8/corpus/quant-nested-ok.msve
+-      231  m8/corpus/quant-option-domain.msve
+-      200  m8/corpus/quant-parens-ok.msve
+-      171  m8/corpus/range-ok.msve
+-      214  m8/corpus/record-dup-field.msve
+-      227  m8/corpus/record-field-type-mismatch.msve
+-      175  m8/corpus/record-infer.msve
+-      212  m8/corpus/record-missing-field.msve
+-      258  m8/corpus/record-nested.msve
+-      207  m8/corpus/record-ok.msve
+-      224  m8/corpus/record-unknown-field.msve
+-      186  m8/corpus/string-escape-not-short.msve
+-      182  m8/corpus/string-escape-upper.msve
+-      170  m8/corpus/string-ok.msve
+-      172  m8/corpus/to_rat-ok.msve
+-      177  m8/corpus/type-cyclic-alias.msve
+-      183  m8/corpus/type-unbound-name.msve
+-      179  m8/corpus/unbound-ident.msve
+-      246  m8/corpus/v07-ex0.msve
+-      324  m8/corpus/v07-ex1.msve
+-      327  m8/corpus/v07-ex2.msve
+-     1409  m8/corpus/v07-ex3.msve
+-      371  m8/corpus/v07-ex4.msve
+-     2334  m8/corpus/v07-ex5.msve
+-        0  m8/corpus/v08/
+-      216  m8/corpus/v08/inv-bare-quant.msve
+-      212  m8/corpus/v08/inv-f64-negzero.msve
+-      192  m8/corpus/v08/inv-mixed-arith.msve
+-      229  m8/corpus/v08/inv-proof-conflict.msve
+-      205  m8/corpus/v08/inv-unbound.msve
+-      246  m8/corpus/v08/v08-ex0.msve
+-      324  m8/corpus/v08/v08-ex1.msve
+-      327  m8/corpus/v08/v08-ex2.msve
+-     1406  m8/corpus/v08/v08-ex3.msve
+-      371  m8/corpus/v08/v08-ex4.msve
+-     2420  m8/corpus/v08/v08-ex5.msve
+-      200  m8/corpus/verif-assurance-level-a-needs-proof.msve
+-      342  m8/corpus/verif-assurance-level-a-unavailable.msve
+-      207  m8/corpus/verif-cases-zero.msve
+-      263  m8/corpus/verif-diff-plus-fuzz.msve
+-      256  m8/corpus/verif-duplicate-test.msve
+-      209  m8/corpus/verif-proof-conflict.msve
+-      188  m8/corpus/verif-qualifier-default.msve
+-      212  m8/corpus/verif-recompute-conflict.msve
+-      223  m8/corpus/verif-test-none-conflict.msve
+-     6321  m8/grammar.py
+-     6375  m8/lexer.py
+-    30216  m8/parser.py
+-     7428  m8/resolve.py
+-        0  m8/runs/
+-     2739  m8/runs/2026-10-09-m8-build.md
+-     1694  m8/runs/phase0-capability-probe.md
+-        0  m8/tests/
+-     1556  m8/tests/__init__.py
+-     4807  m8/tests/test_canonical.py
+-     1326  m8/tests/test_grammar_conformance.py
+-    36470  m8/typecheck.py
+-        0  owner-review/
+-     7805  owner-review/MSVE_v0.8_DEFECT_TRACEABILITY.md
+-     3421  owner-review/MSVE_v0.8_OWNER_REVIEW_HANDOFF.md
+-    34592  owner-review/MSVE_v0.8_OWNER_REVIEW_MANIFEST.json
+-    10847  owner-review/MSVE_v0.8_OWNER_REVIEW_MANIFEST.md
+-    10060  owner-review/MSVE_v0.8_READINESS_EVIDENCE_MATRIX.md
+-        0  owner-review/logs/
+-     6960  owner-review/logs/corpus-per-case.json
+-     1592  owner-review/logs/corpus.log
+-      130  owner-review/logs/grammar-conformance.log
+-      196  owner-review/logs/runtime.txt
+-      397  owner-review/logs/spec-examples.log
+-       71  owner-review/logs/test-canonical.log
+-       89  owner-review/logs/test-grammar-conformance.log
+-        0  owner-review/reviewer-reports/
+-     1855  owner-review/reviewer-reports/PROVENANCE.md
+-    16710  owner-review/reviewer-reports/reviewer-A-grammar-type-system.md
+-    13127  owner-review/reviewer-reports/reviewer-B-canonical-numerics.md
+-    14527  owner-review/reviewer-reports/reviewer-C-validator-contracts.md
+-     7608  owner-review/reviewer-reports/reviewer-D-cross-document.md
+-        0  six-docs/
+-     8848  six-docs/MSVE_ACCEPTANCE_PLAN_v0.8.md
+-     2004  six-docs/MSVE_CAPABILITY_MATRIX_v0.8.md
+-    11050  six-docs/MSVE_DESIGN_REVIEW_v0.8.md
+-    75861  six-docs/MSVE_DESIGN_SPEC_v0.8.md
+-    34625  six-docs/MSVE_REGRESSION_LEDGER_v0.8.md
+-     6610  six-docs/MSVE_VISUALISATION_PLAN_v0.8.md
+
+## MSVE_v0.8.3_CANDIDATE_BUNDLE.zip
+115 entries, 540286 bytes uncompressed
+
+-        0  work-order-0.8.3-candidate/
+-     8935  work-order-0.8.3-candidate/MSVE_ACCEPTANCE_PLAN_v0.8.md
+-     2022  work-order-0.8.3-candidate/MSVE_CAPABILITY_MATRIX_v0.8.md
+-    11156  work-order-0.8.3-candidate/MSVE_DESIGN_REVIEW_v0.8.md
+-    83036  work-order-0.8.3-candidate/MSVE_DESIGN_SPEC_v0.8.md
+-    34625  work-order-0.8.3-candidate/MSVE_REGRESSION_LEDGER_v0.8.md
+-     6697  work-order-0.8.3-candidate/MSVE_VISUALISATION_PLAN_v0.8.md
+-    29268  work-order-0.8.3-candidate/MSVE_v0.8.3_CANDIDATE_MANIFEST.json
+-     3780  work-order-0.8.3-candidate/MSVE_v0.8.3_CORRECTION_REPORT.md
+-     2626  work-order-0.8.3-candidate/MSVE_v0.8.3_CROSS_DOCUMENT_MATRIX.md
+-     1838  work-order-0.8.3-candidate/MSVE_v0.8.3_OWNER_HANDOFF.md
+-    14214  work-order-0.8.3-candidate/MSVE_v0.8.3_PROVENANCE.md
+-     3033  work-order-0.8.3-candidate/MSVE_v0.8.3_RESIDUAL_DEFECT_LEDGER.md
+-     2988  work-order-0.8.3-candidate/MSVE_v0.8.3_VERIFICATION_EVIDENCE.md
+-     7805  work-order-0.8.3-candidate/MSVE_v0.8_DEFECT_TRACEABILITY.md
+-    11367  work-order-0.8.3-candidate/MSVE_v0.8_READINESS_EVIDENCE_MATRIX.md
+-        0  work-order-0.8.3-candidate/m8-candidate/
+-     3896  work-order-0.8.3-candidate/m8-candidate/README.md
+-       67  work-order-0.8.3-candidate/m8-candidate/__init__.py
+-        0  work-order-0.8.3-candidate/m8-candidate/__pycache__/
+-      267  work-order-0.8.3-candidate/m8-candidate/__pycache__/__init__.cpython-312.pyc
+-    17823  work-order-0.8.3-candidate/m8-candidate/__pycache__/canonical.cpython-312.pyc
+-     9452  work-order-0.8.3-candidate/m8-candidate/__pycache__/cli.cpython-312.pyc
+-     6038  work-order-0.8.3-candidate/m8-candidate/__pycache__/grammar.cpython-312.pyc
+-     7043  work-order-0.8.3-candidate/m8-candidate/__pycache__/lexer.cpython-312.pyc
+-    48319  work-order-0.8.3-candidate/m8-candidate/__pycache__/parser.cpython-312.pyc
+-     9758  work-order-0.8.3-candidate/m8-candidate/__pycache__/resolve.cpython-312.pyc
+-    51105  work-order-0.8.3-candidate/m8-candidate/__pycache__/typecheck.cpython-312.pyc
+-    14085  work-order-0.8.3-candidate/m8-candidate/canonical.py
+-     5930  work-order-0.8.3-candidate/m8-candidate/cli.py
+-        0  work-order-0.8.3-candidate/m8-candidate/corpus/
+-      176  work-order-0.8.3-candidate/m8-candidate/corpus/arith-div-int-exact.msve
+-      180  work-order-0.8.3-candidate/m8-candidate/corpus/arith-mixed-real-nat.msve
+-      177  work-order-0.8.3-candidate/m8-candidate/corpus/arith-nat-int-embed.msve
+-      174  work-order-0.8.3-candidate/m8-candidate/corpus/arith-neg3-plus2.msve
+-      175  work-order-0.8.3-candidate/m8-candidate/corpus/arith-unary-minus-nat.msve
+-      198  work-order-0.8.3-candidate/m8-candidate/corpus/bare-quantifier.msve
+-      245  work-order-0.8.3-candidate/m8-candidate/corpus/call-local-fn.msve
+-      203  work-order-0.8.3-candidate/m8-candidate/corpus/case-ok.msve
+-      179  work-order-0.8.3-candidate/m8-candidate/corpus/define-shadow-builtin.msve
+-      397  work-order-0.8.3-candidate/m8-candidate/corpus/f01-base-code.msve
+-      256  work-order-0.8.3-candidate/m8-candidate/corpus/f04-is-nan-typed.msve
+-      193  work-order-0.8.3-candidate/m8-candidate/corpus/f64-neg-zero-exp.msve
+-      205  work-order-0.8.3-candidate/m8-candidate/corpus/f64-normal-form-subnormal.msve
+-      226  work-order-0.8.3-candidate/m8-candidate/corpus/f64-subtraction-no-spaces.msve
+-      190  work-order-0.8.3-candidate/m8-candidate/corpus/f64-upper-hex.msve
+-      186  work-order-0.8.3-candidate/m8-candidate/corpus/f64-valid.msve
+-     6589  work-order-0.8.3-candidate/m8-candidate/corpus/gen_corpus.py
+-      179  work-order-0.8.3-candidate/m8-candidate/corpus/is_some-ok.msve
+-      176  work-order-0.8.3-candidate/m8-candidate/corpus/let-ok.msve
+-      165  work-order-0.8.3-candidate/m8-candidate/corpus/limits-steps-zero.msve
+-      160  work-order-0.8.3-candidate/m8-candidate/corpus/limits-timeout-range.msve
+-     4051  work-order-0.8.3-candidate/m8-candidate/corpus/manifest.json
+-      290  work-order-0.8.3-candidate/m8-candidate/corpus/proj-path-unresolvable.msve
+-      232  work-order-0.8.3-candidate/m8-candidate/corpus/quant-nested-ok.msve
+-      231  work-order-0.8.3-candidate/m8-candidate/corpus/quant-option-domain.msve
+-      200  work-order-0.8.3-candidate/m8-candidate/corpus/quant-parens-ok.msve
+-      171  work-order-0.8.3-candidate/m8-candidate/corpus/range-ok.msve
+-      214  work-order-0.8.3-candidate/m8-candidate/corpus/record-dup-field.msve
+-      227  work-order-0.8.3-candidate/m8-candidate/corpus/record-field-type-mismatch.msve
+-      175  work-order-0.8.3-candidate/m8-candidate/corpus/record-infer.msve
+-      212  work-order-0.8.3-candidate/m8-candidate/corpus/record-missing-field.msve
+-      258  work-order-0.8.3-candidate/m8-candidate/corpus/record-nested.msve
+-      207  work-order-0.8.3-candidate/m8-candidate/corpus/record-ok.msve
+-      224  work-order-0.8.3-candidate/m8-candidate/corpus/record-unknown-field.msve
+-      186  work-order-0.8.3-candidate/m8-candidate/corpus/string-escape-not-short.msve
+-      182  work-order-0.8.3-candidate/m8-candidate/corpus/string-escape-upper.msve
+-      170  work-order-0.8.3-candidate/m8-candidate/corpus/string-ok.msve
+-      172  work-order-0.8.3-candidate/m8-candidate/corpus/to_rat-ok.msve
+-      177  work-order-0.8.3-candidate/m8-candidate/corpus/type-cyclic-alias.msve
+-      183  work-order-0.8.3-candidate/m8-candidate/corpus/type-unbound-name.msve
+-      179  work-order-0.8.3-candidate/m8-candidate/corpus/unbound-ident.msve
+-      246  work-order-0.8.3-candidate/m8-candidate/corpus/v07-ex0.msve
+-      324  work-order-0.8.3-candidate/m8-candidate/corpus/v07-ex1.msve
+-      327  work-order-0.8.3-candidate/m8-candidate/corpus/v07-ex2.msve
+-     1409  work-order-0.8.3-candidate/m8-candidate/corpus/v07-ex3.msve
+-      371  work-order-0.8.3-candidate/m8-candidate/corpus/v07-ex4.msve
+-     2334  work-order-0.8.3-candidate/m8-candidate/corpus/v07-ex5.msve
+-        0  work-order-0.8.3-candidate/m8-candidate/corpus/v08/
+-      216  work-order-0.8.3-candidate/m8-candidate/corpus/v08/inv-bare-quant.msve
+-      212  work-order-0.8.3-candidate/m8-candidate/corpus/v08/inv-f64-negzero.msve
+-      192  work-order-0.8.3-candidate/m8-candidate/corpus/v08/inv-mixed-arith.msve
+-      229  work-order-0.8.3-candidate/m8-candidate/corpus/v08/inv-proof-conflict.msve
+-      205  work-order-0.8.3-candidate/m8-candidate/corpus/v08/inv-unbound.msve
+-      246  work-order-0.8.3-candidate/m8-candidate/corpus/v08/v08-ex0.msve
+-      324  work-order-0.8.3-candidate/m8-candidate/corpus/v08/v08-ex1.msve
+-      327  work-order-0.8.3-candidate/m8-candidate/corpus/v08/v08-ex2.msve
+-     1406  work-order-0.8.3-candidate/m8-candidate/corpus/v08/v08-ex3.msve
+-      371  work-order-0.8.3-candidate/m8-candidate/corpus/v08/v08-ex4.msve
+-     2420  work-order-0.8.3-candidate/m8-candidate/corpus/v08/v08-ex5.msve
+-      200  work-order-0.8.3-candidate/m8-candidate/corpus/verif-assurance-level-a-needs-proof.msve
+-      342  work-order-0.8.3-candidate/m8-candidate/corpus/verif-assurance-level-a-unavailable.msve
+-      207  work-order-0.8.3-candidate/m8-candidate/corpus/verif-cases-zero.msve
+-      263  work-order-0.8.3-candidate/m8-candidate/corpus/verif-diff-plus-fuzz.msve
+-      256  work-order-0.8.3-candidate/m8-candidate/corpus/verif-duplicate-test.msve
+-      209  work-order-0.8.3-candidate/m8-candidate/corpus/verif-proof-conflict.msve
+-      188  work-order-0.8.3-candidate/m8-candidate/corpus/verif-qualifier-default.msve
+-      212  work-order-0.8.3-candidate/m8-candidate/corpus/verif-recompute-conflict.msve
+-      223  work-order-0.8.3-candidate/m8-candidate/corpus/verif-test-none-conflict.msve
+-     6321  work-order-0.8.3-candidate/m8-candidate/grammar.py
+-     6375  work-order-0.8.3-candidate/m8-candidate/lexer.py
+-    30216  work-order-0.8.3-candidate/m8-candidate/parser.py
+-     7451  work-order-0.8.3-candidate/m8-candidate/resolve.py
+-        0  work-order-0.8.3-candidate/m8-candidate/runs/
+-     2739  work-order-0.8.3-candidate/m8-candidate/runs/2026-10-09-m8-build.md
+-     1694  work-order-0.8.3-candidate/m8-candidate/runs/phase0-capability-probe.md
+-        0  work-order-0.8.3-candidate/m8-candidate/tests/
+-     1556  work-order-0.8.3-candidate/m8-candidate/tests/__init__.py
+-        0  work-order-0.8.3-candidate/m8-candidate/tests/__pycache__/
+-     2585  work-order-0.8.3-candidate/m8-candidate/tests/__pycache__/__init__.cpython-312.pyc
+-     6074  work-order-0.8.3-candidate/m8-candidate/tests/__pycache__/test_canonical.cpython-312.pyc
+-     2357  work-order-0.8.3-candidate/m8-candidate/tests/__pycache__/test_grammar_conformance.cpython-312.pyc
+-     6018  work-order-0.8.3-candidate/m8-candidate/tests/test_canonical.py
+-     1326  work-order-0.8.3-candidate/m8-candidate/tests/test_grammar_conformance.py
+-    36572  work-order-0.8.3-candidate/m8-candidate/typecheck.py

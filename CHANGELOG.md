@@ -51,3 +51,19 @@ or imply historical checks that did not occur.
 - Repaired root README to link the history bank. Inventory now 411 rows.
 - Four candidate hashes recalculated: all match. No freeze, baseline,
   implementation, or experiment.
+
+## 2026-10-09 — Repository audit (work order MSVE-REPO-AUDIT-002)
+
+- Verified git state by protocol: remote HEAD `604db7e`, parent chain
+  intact, 424 tracked files (3,963,072 bytes), visibility PUBLIC.
+- Created `history-bank/REPOSITORY_MANIFEST.csv` (427 rows, mechanical:
+  path, size, SHA-256, format, category, role for every tracked file).
+- Created `history-bank/SOURCE_READER_GUIDE.csv` (86 evidence-grounded
+  rows from three independent content inspections).
+- Created `history-bank/REPOSITORY_AUDIT_REPORT.md` (this audit's findings).
+- Corrected `history-bank/source-snapshots/ZIP_CONTENTS.md` (was truncated;
+  now 226 complete entries). Linked the history bank from root README.
+- 404/404 source-to-archive comparisons match. Four candidate hashes match.
+- Cold-start Test C: 10/10 claims traceable via repo navigation. Tests A/B
+  not performed (no isolated session available).
+- No candidate, historical, or raw-log file modified.
