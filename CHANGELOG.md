@@ -124,3 +124,13 @@ Verified each finding against original sources before correcting:
    unmodified.
 
 Historical reports untouched; corrections are in current-status records only.
+
+## 2026-10-09 — Final-hash review wording correction (MSVE-COLDSTART-FINAL-001)
+
+- `PROJECT_STATE.md`: replaced "reviews have been completed on the final
+  file hashes" with the precise provenance: normative review examined the
+  pre-repair spec hash `69828cb4…` (findings addressed; no final-hash
+  re-review documented); the model was re-inspected on its final hash
+  `fc6eb49f…`; the 9/9 result remains reported with documented provenance
+  limits. No other status summary carried the same implication.
+- Historical reports preserved as written.

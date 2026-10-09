@@ -10,9 +10,14 @@
 
 The candidate at `candidate/0.8.8.1/` is a correction candidate prepared for
 owner review. It is the latest in a sequence of document-revision work orders
-(0.8 through 0.8.8.1). Independent normative and formal-model reviews have
-been completed on the final file hashes; all blocking findings were repaired
-and re-verified (9/9 regression tests pass; raw log preserved).
+(0.8 through 0.8.8.1). Independent normative and formal-model reviews were
+completed; all blocking findings were repaired. Review provenance, stated
+precisely: the normative review examined the pre-repair specification hash
+(`69828cb4…`) and its findings were subsequently addressed — a normative
+re-review of the final specification hash (`dbc610c3…`) is not documented.
+The formal model was re-inspected on its final hash (`fc6eb49f…`). The
+recorded 9/9 regression result remains a reported result with the provenance
+limitations documented in `ARTIFACT_REGISTER.md` (raw log preserved).
 
 ## Explicitly NOT authorised
 
