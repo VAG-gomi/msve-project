@@ -25,7 +25,7 @@ at the named commit.
 | `604db7e` | Pre-audit (HISTORY-CHECK-001) | 424 | 3,963,072 |
 | `d83c9de` | Audit (REPO-AUDIT-002) | 427 | 4,091,804 |
 | `93b6117` | Bookkeeping correction | 427 | 4,093,379 |
-| `THIS_COMMIT` | Chronology correction (RECONCILIATION-003) | 427 | 4,094,099 |
+| `THIS_COMMIT` | Chronology correction (RECONCILIATION-003) | 427 | 4,094,558 |
 
 The audit added three files over the pre-audit tree:
 `REPOSITORY_MANIFEST.csv`, `SOURCE_READER_GUIDE.csv`,
