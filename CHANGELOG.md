@@ -187,3 +187,13 @@ Historical reports untouched; corrections are in current-status records only.
   is not an approved baseline). Links to the design specification,
   PROJECT_STATE.md, and KNOWN_LIMITATIONS.md. All statements checked
   against the spec and state records; no new claims introduced.
+
+## 2026-10-10 — Owner rulings D1–D9 integrated (MSVE-WO-1.0 §4)
+
+- `decision-ledger/MSVE_BRAINSTORM_DECISION_LEDGER.csv`: DEC-008 through
+  DEC-016 and DEC-025 moved to ACCEPTED-BY-OWNER with the verbatim ruling
+  text (source: MSVE-WO-1.0 §4, ruled 2026-10-10). Notably D1 selects
+  Policy (B) — UNKNOWN+INCONCLUSIVE may qualify for weak SOLVER_BACKED.
+- `OPEN_DECISIONS.md`: sections annotated with the D1/D2/D7/D8/D9 rulings;
+  option descriptions preserved for provenance.
+- No specification, model, test, or historical record modified.
