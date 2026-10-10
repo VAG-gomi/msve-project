@@ -211,3 +211,10 @@ Historical reports untouched; corrections are in current-status records only.
   work orders MSVE-WO-1.0/MSVE-WO-1.1. Earlier records are preserved
   unchanged; this entry corrects current status only.
 - No specification, model, test, or historical record modified.
+
+## 2026-10-10 — Prototype published to separate implementation repository
+
+- Exploratory prototype published as public
+  `VAG-gomi/msve-engine-prototype` (commit `832978a`), per D9 repository
+  separation. `PROJECT_STATE.md` prototype section now links it.
+- No specification, model, test, or historical record modified.

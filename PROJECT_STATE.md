@@ -65,8 +65,9 @@ a **bounded exploratory engine prototype** under MSVE-WO-1.0, with genuine
 experiments under MSVE-WO-1.1. This is a narrow, explicitly scoped
 exception to the earlier implementation prohibition:
 
-- The prototype lives in a **separate implementation workspace**, not in
-  this archival repository (D9).
+- The prototype lives in a **separate implementation repository**,
+  [VAG-gomi/msve-engine-prototype](https://github.com/VAG-gomi/msve-engine-prototype),
+  not in this archival repository (D9).
 - Its results are **experimental evidence only**, not verified MSVE
   capability, and never freeze or baseline evidence by themselves.
 - The archival design candidate above remains unfrozen and unapproved;
