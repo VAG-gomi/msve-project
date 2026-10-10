@@ -197,3 +197,17 @@ Historical reports untouched; corrections are in current-status records only.
 - `OPEN_DECISIONS.md`: sections annotated with the D1/D2/D7/D8/D9 rulings;
   option descriptions preserved for provenance.
 - No specification, model, test, or historical record modified.
+
+## 2026-10-10 — Current-state correction for D8 prototype authorisation (MSVE-WO-1.1 §A)
+
+- `PROJECT_STATE.md`: "Explicitly NOT authorised" no longer blanket-bans
+  implementation/experiments. New section "Separately authorised:
+  exploratory prototype (D8)" distinguishes the unfrozen archival design
+  candidate from the D8-authorised bounded prototype (separate workspace,
+  experimental evidence only).
+- `README.md`: "Current reality" and "What is NOT authorised" updated to
+  the same distinction.
+- Provenance: D8 ruled 2026-10-10 (decision-ledger DEC-015); prototype
+  work orders MSVE-WO-1.0/MSVE-WO-1.1. Earlier records are preserved
+  unchanged; this entry corrects current status only.
+- No specification, model, test, or historical record modified.

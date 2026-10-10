@@ -32,6 +32,9 @@ limitations, and open decisions. Status:
 [PROJECT_STATE.md](PROJECT_STATE.md) and
 [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md)). The version label
 "0.8.8.1-FINAL" does not mean an approved or frozen baseline.
+Separately, owner ruling D8 authorises a bounded **exploratory prototype**
+in its own workspace (experimental evidence only); it does not change the
+candidate's status.
 
 ## What this is
 
@@ -71,8 +74,9 @@ conversational memory.
 ## What is NOT authorised
 
 No design freeze. No baseline acceptance. Version 0.8.8.1 is a correction
-candidate, not an approved baseline. No engine implementation. No
-experimental runs. See `PROJECT_STATE.md`.
+candidate, not an approved baseline. No full engine implementation. No
+experimental runs beyond the D8-authorised exploratory prototype (separate
+workspace; experimental evidence only). See `PROJECT_STATE.md`.
 
 ## For reviewers
 

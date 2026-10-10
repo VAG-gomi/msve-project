@@ -53,13 +53,27 @@ the missing normative re-review.
 
 - Design freeze / baseline acceptance. The candidate is not frozen.
 - Version 0.8.8.1 approved or production-ready. It is not.
-- MSVE engine implementation.
-- Vertical-slice experiment or any experimental run.
+- Full MSVE engine implementation (beyond the exploratory prototype below).
 - Design baseline approval or product release. (Note: this repository is
   PUBLIC by owner instruction as an archival record; public visibility is
   not a design freeze, baseline approval, or product release.)
 
-Each of the above requires a separate explicit owner decision.
+## Separately authorised: exploratory prototype (D8)
+
+Owner ruling D8 (recorded 2026-10-10; decision-ledger DEC-015) authorises
+a **bounded exploratory engine prototype** under MSVE-WO-1.0, with genuine
+experiments under MSVE-WO-1.1. This is a narrow, explicitly scoped
+exception to the earlier implementation prohibition:
+
+- The prototype lives in a **separate implementation workspace**, not in
+  this archival repository (D9).
+- Its results are **experimental evidence only**, not verified MSVE
+  capability, and never freeze or baseline evidence by themselves.
+- The archival design candidate above remains unfrozen and unapproved;
+  prototype existence does not change the candidate's status.
+
+Each of the NOT-authorised items above still requires a separate explicit
+owner decision.
 
 ## Open items
 
