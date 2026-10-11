@@ -1,0 +1,30 @@
+PASS [R1 pkg encodable, result present] solver=sat expected=sat
+PASS [C2 proof, correct claim_id] solver=sat expected=sat
+PASS [C3 HOLDS + TEST_BACKED] solver=sat expected=sat
+PASS [O1 holds+UNSAT solver-backed] solver=sat expected=sat
+PASS [O2 holds+UNKNOWN rejected] solver=unsat expected=unsat
+PASS [O3 derive+UNSAT rejected (diagnostic)] solver=unsat expected=unsat
+PASS [D4 missing descriptor field rejected] solver=unsat expected=unsat
+PASS [V5 vr spec_version mismatch rejected] solver=unsat expected=unsat
+PASS [D6 2+2 vs 8/2 distinct rejected] solver=unsat expected=unsat
+
+9/9 0.8.8.1 checks behaved as expected
+PASS [W1 weak SOLVER_BACKED on UNKNOWN+INCONCLUSIVE consistent] solver=sat expected=sat
+PASS [W2 weak basis with HOLDS rejected] solver=unsat expected=unsat
+PASS [W3 D2 bar precedes D1 exception (contradiction)] solver=unsat expected=unsat
+PASS [W3b D2 bar blocks strong basis (no_solution)] solver=unsat expected=unsat
+PASS [W4 undefined query language blocks SOLVER_BACKED] solver=unsat expected=unsat
+PASS [W5 recompute without independent checker rejected] solver=unsat expected=unsat
+PASS [C3a derived-value recompute needs no witness] solver=sat expected=sat
+PASS [C3b SAT corroboration with witness accepted] solver=sat expected=sat
+PASS [C3c SAT corroboration without witness rejected] solver=unsat expected=unsat
+PASS [W6 capacity above maximum rejected] solver=unsat expected=unsat
+PASS [W7 wrong identity encoding version rejected] solver=unsat expected=unsat
+
+20/20 total checks behaved as expected
+PASS [C1 admission predicate: 30/30 accepted, unknown rejected]
+PASS [C2a stale query_id blocks SOLVER_BACKED] solver=unsat expected=unsat
+PASS [C2b invocation claim_id mismatch blocks SOLVER_BACKED] solver=unsat expected=unsat
+PASS [C2c correctly linked observation accepted] solver=sat expected=sat
+
+24/24 total checks behaved as expected
