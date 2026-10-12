@@ -15,7 +15,7 @@ from .lexer import KEYWORDS
 
 BUILTINS = {
     "len", "range", "is_finite", "is_ascii_printable", "has_no_whitespace",
-    "is_some", "to_rat", "decode_candidates",
+    "is_some", "to_rat", "decode_candidates", "base_code",
 }
 
 # contextual type names must not be treated as value references

@@ -38,6 +38,7 @@ BUILTIN_SCHEMES = {
     "is_some":             ([("option", ("var", "T"))], "Bool"),
     "to_rat":              (["Real"], "Rat"),
     "decode_candidates":   (["String"], DECODE_OUTCOME),
+    "base_code":            (["String"], "String"),
 }
 
 class CheckError(Exception):

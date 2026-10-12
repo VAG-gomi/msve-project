@@ -218,3 +218,15 @@ Historical reports untouched; corrections are in current-status records only.
   `VAG-gomi/msve-engine-prototype` (commit `832978a`), per D9 repository
   separation. `PROJECT_STATE.md` prototype section now links it.
 - No specification, model, test, or historical record modified.
+
+## 2026-10-12 — Correction candidate 0.8.9.3 (MSVE-WO-1.9C)
+
+- New review candidate at `candidate/0.8.9.3/` closing residual conformance
+  gaps from owner's 0.8.9.2 review.
+- M8 fixed to resolve `base_code` (String→String); 6/6 examples pass.
+- Spec version metadata corrected to 0.8.9.3; machine-checking claim accurate.
+- Embedded D3 normalization wording aligned with A6.
+- Inv 26 Path 2: witness hash validated, resolves to evidence, bound matched.
+- New adversarial scenarios C3e/C3f/C3g; prototype witness/bound bindings.
+- `PROJECT_STATE.md`, `README.md` identify 0.8.9.3; history preserved.
+- No design freeze, baseline acceptance, release, or production claim authorized.
