@@ -248,3 +248,14 @@ Historical reports untouched; corrections are in current-status records only.
   0.8.8.1/0.8.9/0.8.9.1 preserved unchanged.
 origin/main
 - No design freeze, baseline acceptance, release, or production claim authorized.
+
+## 2026-10-12 — Correction candidate 0.8.9.4 (MSVE-WO-1.9D)
+
+- New review candidate at `candidate/0.8.9.4/` closing schema/provenance gaps
+  from owner's 0.8.9.3 review.
+- Spec version metadata corrected to 0.8.9.4 (was stale 0.8.9.1 in 0.8.9.3).
+- SolverInvocation gains `timeout_ms: Nat`; distinct from Core B enumeration bound.
+- Inv 26: removed incorrect timeout/bound equality; added invocation spec_version check.
+- New scenario C3h (invocation spec_version mismatch); C3e repurposed (accepts differing quantities).
+- Project records reconciled to 0.8.9.4 and 149 tests.
+- No design freeze, baseline acceptance, release, or production claim authorized.
