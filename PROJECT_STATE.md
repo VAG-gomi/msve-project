@@ -2,22 +2,25 @@
 
 **Status:** CORRECTION CANDIDATE PREPARED — OWNER REVIEW REQUIRED
 
-**Candidate version label:** 0.8.9.2 (correction candidate; not an accepted baseline)
+**Candidate version label:** 0.8.9.5 (correction candidate; not an accepted baseline)
 
 **Date of record:** 2026-10-12
 
 ## What this means
 
-The candidate at `candidate/0.8.9.2/` is a correction candidate prepared for
-owner review under work order MSVE-WO-1.9B. It reconciles specification/model/
-prototype inconsistencies identified in the owner's source-level review of
-0.8.9.1 (D1 weak-assurance unification, A4 invariant-26 paths, A6
-normalization, query identity, D3 boundary, capacity semantics).
+The candidate at `candidate/0.8.9.5/` is a correction candidate prepared for
+owner review under work order MSVE-WO-1.9E. It addresses six findings from
+the owner's source review of 0.8.9.4: capacity reason closure, type-correct
+invariants, execution-specific invocation provenance, descriptor optionality,
+D3 language rule, and D1 diagnostic wording.
 
 Previous candidates are preserved unchanged as historical artefacts:
 - `candidate/0.8.8.1/` — 0.8.8.1-FINAL (2026-10-09)
 - `candidate/0.8.9/` — 0.8.9 (2026-10-11)
 - `candidate/0.8.9.1/` — 0.8.9.1 correction candidate (2026-10-11)
+- `candidate/0.8.9.2/` — 0.8.9.2 correction candidate (2026-10-12)
+- `candidate/0.8.9.3/` — 0.8.9.3 correction candidate (2026-10-12)
+- `candidate/0.8.9.4/` — 0.8.9.4 correction candidate (2026-10-12)
 
 No design freeze, baseline acceptance, release, or production claim is
 authorized. The bounded D8 exploratory prototype is separately authorized;
