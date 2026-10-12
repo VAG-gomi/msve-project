@@ -6,10 +6,15 @@
 
 ## Verified repository heads (via git ls-remote)
 
-| Repository | HEAD SHA (40-char) |
-|------------|-------------------|
-| VAG-gomi/msve-project | `4b16bf008ec0bc7ab1d4e9d3515c4e783516878e` |
-| VAG-gomi/msve-engine-prototype | `a89f473275b4cf97bec92106e17d533a0442f574` |
+| Repository | Pre-change HEAD (parent) | Final remote HEAD (post-WO-1.9K) |
+|------------|--------------------------|----------------------------------|
+| VAG-gomi/msve-project | `4b16bf008ec0bc7ab1d4e9d3515c4e783516878e` | `3a9e28d7d53e1f9dc3f17006352dd473686cef32` |
+| VAG-gomi/msve-engine-prototype | `a89f473275b4cf97bec92106e17d533a0442f574` | `b2fee132823f3f8183e730e11dc727431746072b` |
+
+*Correction (WO-1.9L): the original table labelled pre-change HEADs as
+"verified repository HEADs". The pre-change SHAs were the parents of the
+WO-1.9K publication commits. Final HEADs queried via `git ls-remote` after
+publication are shown above.*
 
 ## Files changed
 
