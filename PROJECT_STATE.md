@@ -2,17 +2,17 @@
 
 **Status:** CORRECTION CANDIDATE PREPARED — OWNER REVIEW REQUIRED
 
-**Candidate version label:** 0.8.9.6 (correction candidate; not an accepted baseline)
+**Candidate version label:** 0.8.9.7 (correction candidate; not an accepted baseline)
 
 **Date of record:** 2026-10-12
 
 ## What this means
 
-The candidate at `candidate/0.8.9.6/` is a correction candidate prepared for
-owner review under work order MSVE-WO-1.9F. It addresses three blocking
-findings from the owner's source review of 0.8.9.5: self-contained formal
-audit, UUID nonce uniqueness, and invocation reference typing plus
-solver-observation alignment.
+The candidate at `candidate/0.8.9.7/` is a correction candidate prepared for
+owner review under work order MSVE-WO-1.9G. It addresses three P1 mismatches
+from the owner's source review of 0.8.9.6: verification-input fallback hash,
+invocation-ID encoding alignment, and solver-config provenance (Option A),
+plus reason-code and manifest corrections.
 
 Previous candidates are preserved unchanged as historical artefacts:
 - `candidate/0.8.8.1/` — 0.8.8.1-FINAL (2026-10-09)
@@ -22,6 +22,7 @@ Previous candidates are preserved unchanged as historical artefacts:
 - `candidate/0.8.9.3/` — 0.8.9.3 correction candidate (2026-10-12)
 - `candidate/0.8.9.4/` — 0.8.9.4 correction candidate (2026-10-12)
 - `candidate/0.8.9.5/` — 0.8.9.5 correction candidate (2026-10-12)
+- `candidate/0.8.9.6/` — 0.8.9.6 correction candidate (2026-10-12)
 
 No design freeze, baseline acceptance, release, or production claim is
 authorized. The bounded D8 exploratory prototype is separately authorized;
