@@ -46,8 +46,10 @@ conversational memory.
 
 ## Where things live
 
-- `candidate/0.8.8.1/` — the current design candidate (spec, Z3 model,
-  regression script, raw test log). See `ARTIFACT_REGISTER.md` for hashes.
+- `candidate/0.8.9.2/` — the current review candidate (spec, Z3 model,
+  regression script, D3 schema, correction report). See `ARTIFACT_REGISTER.md` for hashes.
+- `candidate/0.8.8.1/`, `candidate/0.8.9/`, `candidate/0.8.9.1/` — preserved
+  historical candidates, unchanged.
 - `records/continuity-export-01/` — the eight continuity documents prepared
   for independent review (status, timeline, finding ledger, contract,
   verification evidence, review history, owner decisions, source manifest).

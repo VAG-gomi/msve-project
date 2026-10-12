@@ -2,22 +2,26 @@
 
 **Status:** CORRECTION CANDIDATE PREPARED — OWNER REVIEW REQUIRED
 
-**Candidate version label:** 0.8.8.1-FINAL (supplied version label, not an accepted baseline)
+**Candidate version label:** 0.8.9.2 (correction candidate; not an accepted baseline)
 
-**Date of record:** 2026-10-09
+**Date of record:** 2026-10-12
 
 ## What this means
 
-The candidate at `candidate/0.8.8.1/` is a correction candidate prepared for
-owner review. It is the latest in a sequence of document-revision work orders
-(0.8 through 0.8.8.1). Independent normative and formal-model reviews were
-completed; all blocking findings were repaired. Review provenance, stated
-precisely: the normative review examined the pre-repair specification hash
-(`69828cb4…`) and its findings were subsequently addressed — a normative
-re-review of the final specification hash (`dbc610c3…`) is not documented.
-The formal model was re-inspected on its final hash (`fc6eb49f…`). The
-recorded 9/9 regression result remains a reported result with the provenance
-limitations documented in `ARTIFACT_REGISTER.md` (raw log preserved).
+The candidate at `candidate/0.8.9.2/` is a correction candidate prepared for
+owner review under work order MSVE-WO-1.9B. It reconciles specification/model/
+prototype inconsistencies identified in the owner's source-level review of
+0.8.9.1 (D1 weak-assurance unification, A4 invariant-26 paths, A6
+normalization, query identity, D3 boundary, capacity semantics).
+
+Previous candidates are preserved unchanged as historical artefacts:
+- `candidate/0.8.8.1/` — 0.8.8.1-FINAL (2026-10-09)
+- `candidate/0.8.9/` — 0.8.9 (2026-10-11)
+- `candidate/0.8.9.1/` — 0.8.9.1 correction candidate (2026-10-11)
+
+No design freeze, baseline acceptance, release, or production claim is
+authorized. The bounded D8 exploratory prototype is separately authorized;
+the full MSVE baseline remains unapproved and unfrozen.
 
 ## Provenance correction notice (read before the continuity package)
 
