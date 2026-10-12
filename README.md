@@ -24,16 +24,20 @@ cases, and verification failures are preserved rather than silently
 converted into successful conclusions.
 
 **Current reality:** MSVE is still a design candidate — a complete engine
-has not been authorised for implementation. This repository holds the
-[design specification](candidate/0.8.8.1/MSVE_DESIGN_SPEC_v0.8.md), formal
-model, Python tools, test and reproduction evidence, historical records,
-limitations, and open decisions. Status:
-**CORRECTION CANDIDATE PREPARED — OWNER REVIEW REQUIRED** (see
+has not been authorised for implementation, and no final baseline is approved.
+The current correction candidate is
+[**0.8.9.10**](candidate/0.8.9.10/MSVE_DESIGN_SPEC_v0.8.9.10.md)
+([D3 schema](candidate/0.8.9.10/D3_SOLVER_FRAGMENT_SCHEMA.md),
+[manifest](candidate/0.8.9.10/CANDIDATE_MANIFEST_08910.md)).
+Status: **CORRECTION CANDIDATE — AWAITING OWNER REVIEW** (see
 [PROJECT_STATE.md](PROJECT_STATE.md) and
-[KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md)). The version label
-"0.8.8.1-FINAL" does not mean an approved or frozen baseline.
+[KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md)).
+0.8.9.10 is a candidate awaiting owner review, not an accepted baseline.
+D7 design freeze and release remain unapproved.
 Separately, owner ruling D8 authorises a bounded **exploratory prototype**
-in its own workspace (experimental evidence only); it does not change the
+in the [separate implementation repository](https://github.com/VAG-gomi/msve-engine-prototype)
+(experimental evidence only under D9 separation); its experimental status
+does not confer approval on the archival candidate, and it does not change the
 candidate's status.
 
 ## What this is
@@ -46,10 +50,14 @@ conversational memory.
 
 ## Where things live
 
-- `candidate/0.8.9.2/` — the current review candidate (spec, Z3 model,
-  regression script, D3 schema, correction report). See `ARTIFACT_REGISTER.md` for hashes.
-- `candidate/0.8.8.1/`, `candidate/0.8.9/`, `candidate/0.8.9.1/` — preserved
-  historical candidates, unchanged.
+- `candidate/0.8.9.10/` — the current review candidate (spec, Z3 model,
+  regression script, D3 schema, invocation vectors, correction report, manifest).
+  See `candidate/0.8.9.10/CANDIDATE_MANIFEST_08910.md` for hashes.
+- `candidate/0.8.8.1/` (0.8.8.1-FINAL), `candidate/0.8.9/`, `candidate/0.8.9.1/`,
+  `candidate/0.8.9.2/`, `candidate/0.8.9.3/`, `candidate/0.8.9.4/`,
+  `candidate/0.8.9.5/`, `candidate/0.8.9.6/`, `candidate/0.8.9.7/`,
+  `candidate/0.8.9.8/`, `candidate/0.8.9.9/` — preserved historical
+  candidates, unchanged.
 - `records/continuity-export-01/` — the eight continuity documents prepared
   for independent review (status, timeline, finding ledger, contract,
   verification evidence, review history, owner decisions, source manifest).
@@ -75,8 +83,8 @@ conversational memory.
 
 ## What is NOT authorised
 
-No design freeze. No baseline acceptance. Version 0.8.8.1 is a correction
-candidate, not an approved baseline. No full engine implementation. No
+No design freeze. No baseline acceptance. Version 0.8.9.10 is a correction
+candidate awaiting owner review, not an approved baseline. No full engine implementation. No
 experimental runs beyond the D8-authorised exploratory prototype (separate
 workspace; experimental evidence only). See `PROJECT_STATE.md`.
 
