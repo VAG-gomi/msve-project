@@ -1,0 +1,38 @@
+PASS [R1 pkg encodable, result present] solver=sat expected=sat
+PASS [C2 proof, correct claim_id] solver=sat expected=sat
+PASS [C3 HOLDS + TEST_BACKED] solver=sat expected=sat
+PASS [O1 holds+UNSAT solver-backed] solver=sat expected=sat
+PASS [O2 holds+UNKNOWN rejected] solver=unsat expected=unsat
+PASS [O3 derive+UNSAT rejected (diagnostic)] solver=unsat expected=unsat
+PASS [D4 missing descriptor field rejected] solver=unsat expected=unsat
+PASS [V5 vr spec_version mismatch rejected] solver=unsat expected=unsat
+PASS [D6 2+2 vs 8/2 distinct rejected] solver=unsat expected=unsat
+
+9/9 0.8.8.1 checks behaved as expected
+PASS [W1 weak SOLVER_BACKED on UNKNOWN+INCONCLUSIVE consistent] solver=sat expected=sat
+PASS [W2 weak basis with HOLDS rejected] solver=unsat expected=unsat
+PASS [W1b weak basis with stale query_id rejected] solver=unsat expected=unsat
+PASS [W1c weak basis with spec_version mismatch rejected] solver=unsat expected=unsat
+PASS [W3 D2 bar precedes D1 exception (contradiction)] solver=unsat expected=unsat
+PASS [W3b D2 bar blocks strong basis (no_solution)] solver=unsat expected=unsat
+PASS [W4 undefined query language blocks SOLVER_BACKED] solver=unsat expected=unsat
+PASS [W5 recompute without independent checker rejected] solver=unsat expected=unsat
+PASS [C3a derived-value recompute needs no witness] solver=sat expected=sat
+PASS [C3b SAT corroboration with bound witness accepted] solver=sat expected=sat
+PASS [C3c SAT corroboration with unbound witness rejected] solver=unsat expected=unsat
+PASS [C3d witness checked by wrong component rejected] solver=unsat expected=unsat
+PASS [C3e timeout vs enumeration bound not equated (accepted)] solver=sat expected=sat
+PASS [C3f SAT corroboration with unresolvable witness rejected] solver=unsat expected=unsat
+PASS [C3g SAT corroboration with malformed witness hash rejected] solver=unsat expected=unsat
+PASS [C3h invocation spec_version mismatch rejected] solver=unsat expected=unsat
+PASS [W6 capacity above maximum rejected] solver=unsat expected=unsat
+PASS [W7 wrong identity encoding version rejected] solver=unsat expected=unsat
+
+27/27 total checks behaved as expected
+PASS [C1 admission predicate: 29/29 accepted, unknown rejected]
+PASS [C2a stale query_id blocks SOLVER_BACKED] solver=unsat expected=unsat
+PASS [C2b invocation claim_id mismatch blocks SOLVER_BACKED] solver=unsat expected=unsat
+PASS [C2c correctly linked observation accepted] solver=sat expected=sat
+PASS [C2d duplicate invocation IDs rejected] solver=unsat expected=unsat
+
+32/32 total checks behaved as expected
