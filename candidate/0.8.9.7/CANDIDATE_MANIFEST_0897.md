@@ -10,7 +10,7 @@
 |------------|------------|
 | Archival (candidate content) | `ae0efcf2a3fb55ec0116358bf255b8b2b40d5f5f` |
 | Archival (final) | `adbc66996bc00524c186ecdf0069c6480d469540` |
-| Prototype | `(see prototype repo)` |
+| Prototype | `4307bb776168ba1f484e7eb56df05bf06e2de370` |
 
 ## Artifact hashes (SHA-256)
 
