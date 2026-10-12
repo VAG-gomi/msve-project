@@ -1,0 +1,56 @@
+{
+ "is_admission_error": [
+  "not-a-formal-specification",
+  "missing-header-field",
+  "syntax-error",
+  "unbound-identifier",
+  "duplicate-definition",
+  "reserved-context-name",
+  "reserved-keyword-misuse",
+  "type-mismatch",
+  "arity-mismatch",
+  "unknown-builtin",
+  "unsupported-quantifier-domain",
+  "undefined-nonterminal",
+  "missing-required-projection",
+  "projection-path-unresolvable",
+  "unbound-assumption-reference",
+  "missing-mandatory-timeout",
+  "timeout-out-of-range",
+  "degenerate-resource-limit",
+  "degenerate-fuzz-config",
+  "duplicate-verification-item",
+  "conflicting-verification-requirements",
+  "conflicting-assurance-requirements",
+  "assurance-level-unavailable",
+  "missing-goal",
+  "memory-limit-exceeded",
+  "unsupported-target",
+  "capacity-out-of-range",
+  "capacity-not-an-object",
+  "capacity-missing-key"
+ ],
+ "is_unsupported_reason": [
+  "scope-not-supported",
+  "goal-not-supported",
+  "construct-not-decidable-for-proof"
+ ],
+ "is_validation_error": [
+  "malformed-json",
+  "invalid-top-level",
+  "invalid-element",
+  "duplicate-key",
+  "missing-field",
+  "unexpected-field",
+  "invalid-field-type",
+  "invalid-rank",
+  "invalid-score",
+  "empty-candidate-set",
+  "invalid-uci",
+  "duplicate-uci"
+ ],
+ "is_packaging_error": [
+  "output-not-encodable",
+  "canonicalization-failure"
+ ]
+}
