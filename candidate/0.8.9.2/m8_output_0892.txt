@@ -1,0 +1,17 @@
+B.11 example 0: PASS
+B.11 example 1: PASS
+B.11 example 2: PASS
+B.11 example 3: PASS
+B.11 example 4: PASS
+B.11 example 5: FAIL
+    [name-resolution] name-resolution error at 18:4: unbound identifier 'base_code'
+    [name-resolution] name-resolution error at 18:42: unbound identifier 'base_code'
+    [name-resolution] name-resolution error at 19:4: unbound identifier 'base_code'
+    [name-resolution] name-resolution error at 19:43: unbound identifier 'base_code'
+    [name-resolution] name-resolution error at 20:4: unbound identifier 'base_code'
+B.12 example 0: PASS (rejected [syntax])
+B.12 example 1: PASS (rejected [type])
+B.12 example 2: PASS (rejected [name-resolution])
+B.12 example 3: PASS (rejected [admission])
+B.12 example 4: PASS (rejected [lexical])
+spec-examples: 1 failures

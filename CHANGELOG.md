@@ -218,3 +218,21 @@ Historical reports untouched; corrections are in current-status records only.
   `VAG-gomi/msve-engine-prototype` (commit `832978a`), per D9 repository
   separation. `PROJECT_STATE.md` prototype section now links it.
 - No specification, model, test, or historical record modified.
+
+## 2026-10-12 — Correction candidate 0.8.9.2 (MSVE-WO-1.9B)
+
+- New review candidate at `candidate/0.8.9.2/` reconciling specification/
+  model/prototype inconsistencies identified in the owner's source-level
+  review of 0.8.9.1.
+- D1: weak assurance unified as `SOLVER_BACKED{weak=true}`; weak path
+  enforces full claim/query/spec linkage (Inv 27b/30).
+- A4: Invariant 26 rewritten with two explicit paths; dedicated
+  `SatCorroboration` record type; no unbound witness flags.
+- A6: `string-not-normalized` removed (29 admission codes); normalize-
+  don't-reject policy applied throughout (§B.4a, D3 §7, §E.6b).
+- D3: canonical query encoding fully specified (§9.1) with golden vectors;
+  `claim_query_link` now a normative result field.
+- Capacity overflow is a typed result (`capacity_exceeded`), not an exception.
+- `PROJECT_STATE.md`, `README.md` identify 0.8.9.2 as the review candidate;
+  0.8.8.1/0.8.9/0.8.9.1 preserved unchanged.
+- No design freeze, baseline acceptance, release, or production claim authorized.
