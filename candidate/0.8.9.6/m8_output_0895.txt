@@ -1,0 +1,13 @@
+B.11 example 0: PASS
+B.11 example 1: PASS
+B.11 example 2: PASS
+B.11 example 3: PASS
+B.11 example 4: PASS
+B.11 example 5: PASS
+B.12 example 0: PASS (rejected [syntax])
+B.12 example 1: PASS (rejected [type])
+B.12 example 2: PASS (rejected [name-resolution])
+B.12 example 3: PASS (rejected [admission])
+B.12 example 4: PASS (rejected [lexical])
+spec-examples: 0 failures
+M8 output preserved (grammar unchanged from 0.8.9.4)
