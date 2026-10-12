@@ -2,17 +2,16 @@
 
 **Status:** CORRECTION CANDIDATE PREPARED — OWNER REVIEW REQUIRED
 
-**Candidate version label:** 0.8.9.8 (correction candidate; not an accepted baseline)
+**Candidate version label:** 0.8.9.9 (correction candidate; not an accepted baseline)
 
 **Date of record:** 2026-10-12
 
 ## What this means
 
-The candidate at `candidate/0.8.9.8/` is a correction candidate prepared for
-owner review under work order MSVE-WO-1.9H. It addresses two P1 findings from
-the owner's source review of 0.8.9.7: exact query-schema enforcement and
-self-contained invocation vectors, plus SolverInvocation type alignment and
-metadata corrections.
+The candidate at `candidate/0.8.9.9/` is a correction candidate prepared for
+owner review under work order MSVE-WO-1.9I. It addresses the P1 duplicate-JSON-key
+rejection gap from the owner's source review of 0.8.9.8 and completes the
+evidence manifest with full commit and artifact hashes.
 
 Previous candidates are preserved unchanged as historical artefacts:
 - `candidate/0.8.8.1/` — 0.8.8.1-FINAL (2026-10-09)
@@ -24,6 +23,7 @@ Previous candidates are preserved unchanged as historical artefacts:
 - `candidate/0.8.9.5/` — 0.8.9.5 correction candidate (2026-10-12)
 - `candidate/0.8.9.6/` — 0.8.9.6 correction candidate (2026-10-12)
 - `candidate/0.8.9.7/` — 0.8.9.7 correction candidate (2026-10-12)
+- `candidate/0.8.9.8/` — 0.8.9.8 correction candidate (2026-10-12)
 
 No design freeze, baseline acceptance, release, or production claim is
 authorized. The bounded D8 exploratory prototype is separately authorized;
