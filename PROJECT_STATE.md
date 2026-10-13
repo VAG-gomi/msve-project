@@ -2,14 +2,14 @@
 
 **Status:** CORRECTION CANDIDATE PREPARED — OWNER REVIEW REQUIRED
 
-**Candidate version label:** 0.8.9.12 (correction candidate; not an accepted baseline)
+**Candidate version label:** 0.8.9.13 (correction candidate; not an accepted baseline)
 
 **Date of record:** 2026-10-12
 
 ## What this means
 
-The candidate at `candidate/0.8.9.12/` is a correction candidate prepared for
-owner review under work order MSVE-WO-1.9N. It binds the manifest to verified
+The candidate at `candidate/0.8.9.13/` is a correction candidate prepared for
+owner review under work order MSVE-WO-1.9O. It binds the manifest to verified
 repository commits, completes artefact hashes, adds run_text() end-to-end
 duplicate-key coverage, and reconciles specification metadata.
 
