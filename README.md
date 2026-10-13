@@ -26,13 +26,13 @@ converted into successful conclusions.
 **Current reality:** MSVE is still a design candidate — a complete engine
 has not been authorised for implementation, and no final baseline is approved.
 The current correction candidate is
-[**0.8.9.10**](candidate/0.8.9.10/MSVE_DESIGN_SPEC_v0.8.9.10.md)
-([D3 schema](candidate/0.8.9.10/D3_SOLVER_FRAGMENT_SCHEMA.md),
-[manifest](candidate/0.8.9.10/CANDIDATE_MANIFEST_08910.md)).
+[**0.8.9.14**](candidate/0.8.9.14/MSVE_DESIGN_SPEC_v0.8.9.14.md)
+([D3 schema](candidate/0.8.9.14/D3_SOLVER_FRAGMENT_SCHEMA.md),
+[manifest](candidate/0.8.9.14/CANDIDATE_MANIFEST_08914.md)).
 Status: **CORRECTION CANDIDATE — AWAITING OWNER REVIEW** (see
 [PROJECT_STATE.md](PROJECT_STATE.md) and
 [KNOWN_LIMITATIONS.md](KNOWN_LIMITATIONS.md)).
-0.8.9.10 is a candidate awaiting owner review, not an accepted baseline.
+0.8.9.14 is a candidate awaiting owner review, not an accepted baseline.
 D7 design freeze and release remain unapproved.
 Separately, owner ruling D8 authorises a bounded **exploratory prototype**
 in the [separate implementation repository](https://github.com/VAG-gomi/msve-engine-prototype)
@@ -50,9 +50,9 @@ conversational memory.
 
 ## Where things live
 
-- `candidate/0.8.9.10/` — the current review candidate (spec, Z3 model,
+- `candidate/0.8.9.14/` — the current review candidate (spec, Z3 model,
   regression script, D3 schema, invocation vectors, correction report, manifest).
-  See `candidate/0.8.9.10/CANDIDATE_MANIFEST_08910.md` for hashes.
+  See `candidate/0.8.9.14/CANDIDATE_MANIFEST_08914.md` for hashes.
 - `candidate/0.8.8.1/` (0.8.8.1-FINAL), `candidate/0.8.9/`, `candidate/0.8.9.1/`,
   `candidate/0.8.9.2/`, `candidate/0.8.9.3/`, `candidate/0.8.9.4/`,
   `candidate/0.8.9.5/`, `candidate/0.8.9.6/`, `candidate/0.8.9.7/`,

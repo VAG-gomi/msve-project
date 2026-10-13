@@ -1,0 +1,48 @@
+verdict self-test: 6/6 PASS (UNKNOWN never PASS)
+PASS [R1 pkg encodable, result present] solver=sat expected=sat
+PASS [C2 proof, correct claim_id] solver=sat expected=sat
+PASS [C3 HOLDS + TEST_BACKED] solver=sat expected=sat
+PASS [O1 holds+UNSAT solver-backed] solver=sat expected=sat
+PASS [O2 holds+UNKNOWN rejected] solver=unsat expected=unsat
+PASS [O3 derive+UNSAT rejected (diagnostic)] solver=unsat expected=unsat
+PASS [D4 missing descriptor field rejected] solver=unsat expected=unsat
+PASS [V5 vr spec_version mismatch rejected] solver=unsat expected=unsat
+PASS [D6 2+2 vs 8/2 distinct rejected] solver=unsat expected=unsat
+
+0.8.8.1 section: PASS=9 FAIL=0 INCONCLUSIVE=0
+PASS [W1 weak SOLVER_BACKED on UNKNOWN+INCONCLUSIVE consistent] solver=sat expected=sat
+PASS [W2 weak basis with HOLDS rejected] solver=unsat expected=unsat
+PASS [W1b weak basis with stale query_id rejected] solver=unsat expected=unsat
+PASS [W1c weak basis with spec_version mismatch rejected] solver=unsat expected=unsat
+PASS [W3 D2 bar precedes D1 exception (contradiction)] solver=unsat expected=unsat
+PASS [W3b D2 bar blocks strong basis (no_solution)] solver=unsat expected=unsat
+PASS [W4 undefined query language blocks SOLVER_BACKED] solver=unsat expected=unsat
+PASS [W5 recompute without independent checker rejected] solver=unsat expected=unsat
+PASS [C3a derived-value recompute needs no witness] solver=sat expected=sat
+PASS [C3b SAT corroboration with bound witness accepted] solver=sat expected=sat
+PASS [C3c SAT corroboration with unbound witness rejected] solver=unsat expected=unsat
+PASS [C3d witness checked by wrong component rejected] solver=unsat expected=unsat
+PASS [C3e timeout vs enumeration bound not equated (accepted)] solver=sat expected=sat
+PASS [C3f SAT corroboration with unresolvable witness rejected] solver=unsat expected=unsat
+PASS [C3g SAT corroboration with malformed witness hash rejected] solver=unsat expected=unsat
+PASS [C3h invocation spec_version mismatch rejected] solver=unsat expected=unsat
+PASS [W6 capacity above maximum rejected] solver=unsat expected=unsat
+PASS [W7 wrong identity encoding version rejected] solver=unsat expected=unsat
+INCONCLUSIVE [Inv3-3 solver-backed HOLDS (UNKNOWN): rejected] solver=unknown expected=unsat
+PASS [Inv3-6 corpus-based HOLDS (empty corpus): rejected] solver=unsat expected=unsat
+
+INCONCLUSIVE [O-2 missing invocation: rejected] solver=unknown expected=unsat
+INCONCLUSIVE [O-3 query_id mismatch: rejected] solver=unknown expected=unsat
+INCONCLUSIVE [O-4 claim_id mismatch: rejected] solver=unknown expected=unsat
+INCONCLUSIVE [O-5 spec_version mismatch: rejected] solver=unknown expected=unsat
+PASS [D5-1 valid overflow (recognised param, actual>limit): accepted] solver=sat expected=sat
+PASS [D5-2 unrecognised param: rejected] solver=unsat expected=unsat
+PASS [D5-3 limit mismatch: rejected] solver=unsat expected=unsat
+PASS [D5-4 actual <= limit: rejected] solver=unsat expected=unsat
+PASS=32 FAIL=0 INCONCLUSIVE=5 of 37 total
+INCONCLUSIVE cases (cause: solver UNKNOWN):
+  - Inv3-3 solver-backed HOLDS (UNKNOWN): rejected (expected unsat, got unknown)
+  - O-2 missing invocation: rejected (expected unsat, got unknown)
+  - O-3 query_id mismatch: rejected (expected unsat, got unknown)
+  - O-4 claim_id mismatch: rejected (expected unsat, got unknown)
+  - O-5 spec_version mismatch: rejected (expected unsat, got unknown)
